@@ -1,0 +1,10 @@
+div {
+  background-color: red;
+  width: 50vh;
+  height: 3800px;
+}
+
+/* default to zero incase js script fails */
+:root {
+  --scroll: 0;
+}
