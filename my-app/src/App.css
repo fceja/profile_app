@@ -1,9 +1,8 @@
 .App {
-  margin: 10px;
   background-color: silver;
   border-style: dotted;
-  width: 98%;
-  height: 98%;
+  width: 80vw;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;

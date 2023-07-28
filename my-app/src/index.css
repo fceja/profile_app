@@ -1,15 +1,16 @@
 html {
   background-color: black;
-  height: 100%;
+  height: 3000px;
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 body {
   border-style: dashed;
   width: 98%;
   background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
