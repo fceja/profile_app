@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 5rem;
 }
 
 /* default to zero incase js script fails */
