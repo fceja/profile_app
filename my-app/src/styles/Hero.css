@@ -1,7 +1,10 @@
-div {
+.HeroDiv {
   background-color: red;
-  width: 50vh;
-  height: 3800px;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* default to zero incase js script fails */
