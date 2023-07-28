@@ -6,5 +6,7 @@ import "../styles/Hero.css";
 export default function Hero() {
   SetScrollVar();
 
-  return <div className="HeroDiv">AB Company</div>;
+  return (
+    <div className="HeroDiv">AB Company Logo</div>
+  )
 }
