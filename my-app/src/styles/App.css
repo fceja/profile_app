@@ -2,8 +2,8 @@
   background-color: silver;
   border-style: dotted;
   width: 80vw;
-  height: 500px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
