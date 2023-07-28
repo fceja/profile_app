@@ -1,9 +1,7 @@
 .App {
-  background-color: silver;
   border-style: dotted;
   width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }

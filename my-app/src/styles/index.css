@@ -1,5 +1,4 @@
 html {
-  background-color: black;
   height: 3000px;
   width: 100%;
   font-size: 20px;
@@ -9,7 +8,6 @@ body {
   border-style: dashed;
   width: 98%;
   height: 75%;
-  background-color: orange;
   display: flex;
   justify-content: center;
 
