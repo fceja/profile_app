@@ -1,0 +1,101 @@
+
+/* XS screen sizes */
+@media(max-width:576px){
+    .CTA-link-container {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .CTA {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border: solid;
+        justify-content: center;
+        align-items: center;
+        direction: column;
+        padding: 5px;
+    }
+}
+
+/* S screen sizes */
+@media(min-width:576px) and (max-width:768px){
+    .CTA-link-container {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .CTA {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border: solid;
+        justify-content: center;
+        align-items: center;
+        direction: column;
+        padding: 5px;
+    }
+}
+
+/* MD screen sizes */
+@media(min-width:768px) and (max-width:992px){
+    .CTA-link-container {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CTA {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border: solid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* L screen sizes */
+@media(min-width:992px) and (max-width:1200px){
+    .CTA-link-container {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CTA {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border: solid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* XL screen sizes */
+@media(min-width:1200px){
+    .CTA-link-container {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CTA {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border: solid;
+        justify-content: center;
+        align-items: center;
+    }
+}
