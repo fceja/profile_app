@@ -1,27 +1,6 @@
 
-/* XS screen sizes */
-@media(max-width:576px){
-    .CTA-link-container {
-        height: 500px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .CTA {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        direction: column;
-        padding: 5px;
-    }
-}
-
-/* S screen sizes */
-@media(min-width:576px) and (max-width:768px){
+/* mobile screen sizes */
+@media(max-width:768px){
     .CTA-link-container {
         height: 500px;
         width: 100%;
@@ -42,7 +21,7 @@
 }
 
 /* MD screen sizes */
-@media(min-width:768px) and (max-width:992px){
+@media(min-width:768px) and (max-width:1024px){
     .CTA-link-container {
         height: 300px;
         width: 100%;
@@ -59,26 +38,8 @@
     }
 }
 
-/* L screen sizes */
-@media(min-width:992px) and (max-width:1200px){
-    .CTA-link-container {
-        height: 300px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .CTA {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-/* XL screen sizes */
-@media(min-width:1200px){
+/* Desktop screen sizes */
+@media(min-width: 1024px){
     .CTA-link-container {
         height: 300px;
         width: 100%;
