@@ -1,6 +1,5 @@
 .App {
-  border-style: dotted;
-  width: 80vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

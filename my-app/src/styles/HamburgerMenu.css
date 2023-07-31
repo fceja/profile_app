@@ -36,8 +36,6 @@
 
 .visible {
     display: inherit;
-    border-style: dotted;
-    border-color: orange;
     position: absolute;
     top: 5em;
     z-index: 1;
