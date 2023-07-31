@@ -1,7 +1,8 @@
 .img-slider-container {
-    height: 500px;
+    margin: 20px;
+    height: 350px;
     width: 100%;
-    background-color: blueviolet;
+    background-color: rgb(249, 244, 245);
     position: relative;
   }
 
@@ -34,5 +35,4 @@
     right: 10%;
     top: 25%;
     font-size: 50px;
-    color: orange;
   }

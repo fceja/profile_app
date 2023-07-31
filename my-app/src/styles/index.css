@@ -1,13 +1,10 @@
 html {
-  height: 3000px;
-  width: 100%;
   font-size: 20px;
 }
 
 body {
-  border-style: dashed;
-  width: 98%;
-  height: 75%;
+  margin: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
 
