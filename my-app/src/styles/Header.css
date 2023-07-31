@@ -7,3 +7,8 @@
 .headerDiv {
     position: sticky;
 }
+
+/* default to zero incase js script fails */
+:root {
+    --scroll: 0;
+  }
