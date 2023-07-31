@@ -13,11 +13,10 @@
   text-shadow: 50px 100px 10px rgba(0, 0, 0, 0.1);
 
   background: linear-gradient(
-    to top right,
+    to top,
     rgb(255, 255, 255) calc(20% + (30% * var(--scroll))),
-    rgb(88, 87, 87) 300%
+    rgb(0, 128, 128) 200%
   )
-
 }
 
 /* default to zero incase js script fails */
