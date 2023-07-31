@@ -5,6 +5,13 @@
     width: 100%;
     background-color: rgb(249, 244, 245);
     position: relative;
+
+  }
+  .img-text {
+    position: absolute;
+    right: 5px;
+    top: 15%;
+    font-size: 2em;
   }
 }
 
@@ -16,6 +23,13 @@
     background-color: rgb(249, 244, 245);
     position: relative;
   }
+
+  .img-text {
+    position: absolute;
+    right: 20px;
+    top: 15%;
+    font-size: 3em;
+  }
 }
 
 /* Desktop sizes */
@@ -25,6 +39,13 @@
     width: 100%;
     background-color: rgb(249, 244, 245);
     position: relative;
+  }
+
+  .img-text {
+    position: absolute;
+    right: 50px;
+    top: 15%;
+    font-size: 5em;
   }
 }
 
@@ -50,11 +71,4 @@
   border-top-left-radius: 5em;
   border-bottom-left-radius: 5em;
   object-fit: cover;
-}
-
-.img-text {
-  position: absolute;
-  right: 10%;
-  top: 25%;
-  font-size: 50px;
 }

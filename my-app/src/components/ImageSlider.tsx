@@ -14,8 +14,11 @@ export default function ImageSlider() {
         />
       </div>
       <div className="img-text">
-        This is img text <br />
-        More text
+        <ul>
+          <li>Residential</li>
+          <li>Commercial</li>
+          <li>Industrial</li>
+        </ul>
       </div>
     </div>
   );
