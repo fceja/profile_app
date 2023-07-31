@@ -1,3 +1,5 @@
+import "../styles/TelNumber.css"
+
 import React from "react";
 
 function handleClick() {
