@@ -7,6 +7,8 @@ export default function Hero() {
   SetScrollVar();
 
   return (
-    <p className="hero-text">AB<br/> Company</p>
+    <div className="img-container">
+      <img className="img-hero" src="images/PopsAndSonsLogo.png"/>
+    </div>
   )
 }
