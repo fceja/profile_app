@@ -1,24 +1,25 @@
-.hero-text {
-  margin: 0;
-  height: 45vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  translate: 0 calc(-4% * (max(var(--scroll), 2) - 2) * 100 / 98);
-  font-size: 2rem;
-  font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 50px 100px 10px rgba(0, 0, 0, 0.1);
+/* mobile screen sizes */
+@media (max-width: 768px) {
+  .img-container {
+    opacity: calc( 1 - (var(--scroll) * .05 ));
+  }
 
-  background: linear-gradient(
-    to top,
-    rgb(255, 255, 255) calc(20% + (30% * var(--scroll))),
-    rgb(0, 128, 128) 200%
-  )
+  .img-hero {
+    margin: 50px;
+    height: 50vh;
+    translate: 0 calc(-1.5% * (max(var(--scroll), 2) - 2) * 100 / 98);
+  }
+}
+
+/* MD screen sizes */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Desktop screen sizes */
+@media (min-width: 1024px) {
 }
 
 /* default to zero incase js script fails */
 :root {
   --scroll: 0;
 }
-
