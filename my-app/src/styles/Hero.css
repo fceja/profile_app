@@ -1,13 +1,13 @@
 /* mobile screen sizes */
 @media (max-width: 768px) {
   .img-container {
-    opacity: calc( 1 - (var(--scroll) * .05 ));
+    opacity: calc( 1 - (var(--scroll) * .025 ));
   }
 
   .img-hero {
     margin: 50px;
     height: 50vh;
-    translate: 0 calc(-1.5% * (max(var(--scroll), 2) - 2) * 100 / 98);
+    translate: 0 calc(-1% * (max(var(--scroll), 2) - 2) * 100 / 98);
   }
 }
 
