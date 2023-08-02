@@ -4,7 +4,7 @@ import "../styles/Home.css";
 
 export default function Home() {
   return (
-    <div className="img-slider-container">
+    <div className="home-img-container">
       <div className="img-gradient-container">
         <div className="gradient"/>
         <img

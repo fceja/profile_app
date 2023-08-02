@@ -1,6 +1,6 @@
 /* mobile screen sizes */
 @media (max-width: 768px) {
-  .img-slider-container {
+  .home-img-container {
     height: 350px;
     width: 100%;
     background-color: rgb(249, 244, 245);
@@ -17,7 +17,7 @@
 
 /* Tablet sizes */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .img-slider-container {
+  .home-img-container {
     height: 500px;
     width: 100%;
     background-color: rgb(249, 244, 245);
@@ -34,7 +34,7 @@
 
 /* Desktop sizes */
 @media (min-width: 1024px){
-  .img-slider-container {
+  .home-img-container {
     height: 750px;
     width: 100%;
     background-color: rgb(249, 244, 245);
