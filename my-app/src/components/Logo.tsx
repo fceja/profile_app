@@ -1,7 +1,7 @@
 import "../styles/Logo.css";
 
 import React from "react";
-import SetScrollVar from "../scripts/HeroScript";
+import SetScrollVar from "../scripts/ScrollScript";
 
 export default function Logo() {
   SetScrollVar();

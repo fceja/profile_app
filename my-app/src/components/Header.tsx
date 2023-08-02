@@ -1,7 +1,7 @@
 import "../styles/Header.css"
 
 import React from "react";
-import SetScrollVar from "../scripts/HeroScript";
+import SetScrollVar from "../scripts/ScrollScript";
 
 export default function Header() {
     SetScrollVar();

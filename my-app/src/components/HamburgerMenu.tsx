@@ -17,11 +17,6 @@ const HamburgerMenu = () => {
     if (
       isMenuClicked &&
       menuRef.current &&
-    //   !menuRef.current.contains(event.target) &&
-    // event.target.className !==
-    //   "hamburger-menu-bar-container" /* exclude since handled in onClick */ &&
-    // event.target.className !==
-    //   "hamburger-bar clicked" /* exclude since handled in onClick */
       !menuRef.current.contains(targetNode) &&
       (targetNode instanceof HTMLElement) &&
       (targetNode.className !==

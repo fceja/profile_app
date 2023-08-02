@@ -1,7 +1,7 @@
 import "../styles/NavBar.css";
 
-import React from "react";
 import HamburgerMenu from './HamburgerMenu';
+import React from "react";
 import TelNumber from "./TelNumber";
 
 export default function NavBar () {
