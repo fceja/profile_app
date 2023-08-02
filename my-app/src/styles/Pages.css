@@ -1,7 +1,7 @@
 
 /* mobile screen sizes */
 @media(max-width:768px){
-    .CTA-link-container {
+    .page-container {
         height: 500px;
         width: 100%;
         display: flex;
@@ -22,7 +22,7 @@
 
 /* MD screen sizes */
 @media(min-width:768px) and (max-width:1024px){
-    .CTA-link-container {
+    .page-container {
         height: 300px;
         width: 100%;
         display: flex;
@@ -40,7 +40,7 @@
 
 /* Desktop screen sizes */
 @media(min-width: 1024px){
-    .CTA-link-container {
+    .page-container {
         height: 300px;
         width: 100%;
         display: flex;

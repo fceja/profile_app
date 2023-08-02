@@ -1,8 +1,8 @@
 import React from "react";
 
-import "../styles/ImageSlider.css";
+import "../styles/Home.css";
 
-export default function ImageSlider() {
+export default function Home() {
   return (
     <div className="img-slider-container">
       <div className="img-gradient-container">
