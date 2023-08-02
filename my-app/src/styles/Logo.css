@@ -1,43 +1,33 @@
 /* mobile screen sizes */
 @media (max-width: 768px) {
-  .img-container {
-    margin: 0px;
-    opacity: calc( 1 - (var(--scroll) * .025 ));
-    overflow-x: hidden;
-  }
-
   .img-hero {
-    margin: 0px;
-    height: 50%;
-    width: 100%;
+    width: 98vw;
     translate: 0 calc(-1% * (max(var(--scroll), 2) - 2) * 100 / 98);
   }
 }
 
 /* MD screen sizes */
-@media (min-width: 768px) and (max-width: 1024px) { */
-  .img-container {
-    opacity: calc( 1 - (var(--scroll) * .025 ));
-  }
-
+@media (min-width: 768px) and (max-width: 1024px) {
   .img-hero {
-    height: 50%;
-    width: 100%;
+    height: 60vh;
     translate: 0 calc(-1% * (max(var(--scroll), 2) - 2) * 100 / 98);
   }
 }
 
 /* Desktop screen sizes */
 @media (min-width: 1024px) {
-  .img-container {
-    opacity: calc( 1 - (var(--scroll) * .025 ));
-  }
-
   .img-hero {
-    height: 50%;
-    width: 100%;
+    height: 70vh;
     translate: 0 calc(-1% * (max(var(--scroll), 2) - 2) * 100 / 98);
   }
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: calc( 1 - (var(--scroll) * .025 ));
+
 }
 
 /* default to zero incase js script fails */

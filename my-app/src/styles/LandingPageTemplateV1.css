@@ -1,0 +1,4 @@
+.page-template-v1 {
+    display: flex;
+    flex-direction: column;
+}
