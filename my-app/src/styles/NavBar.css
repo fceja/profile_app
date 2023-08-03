@@ -1,5 +1,8 @@
-nav {
-    height: 5em;
-    background-color: rgb(37, 39, 53);
-    display: flex;
+.app-nav {
+  height: 5em;
+  background-color: rgb(37, 39, 53);
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
