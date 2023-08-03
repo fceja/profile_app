@@ -1,16 +1,19 @@
 /* mobile screen sizes */
 @media (max-width: 768px) {
   .home-img-container {
-    height: 350px;
+    height: 100%;
     width: 100%;
     background-color: rgb(249, 244, 245);
     position: relative;
 
   }
   .img-text {
-    position: absolute;
-    right: 5px;
-    top: 15%;
+    height: 100%;
+    width: 95%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 2em;
   }
 }
@@ -18,16 +21,19 @@
 /* Tablet sizes */
 @media (min-width: 768px) and (max-width: 1024px) {
   .home-img-container {
-    height: 500px;
+    height: 100%;
     width: 100%;
     background-color: rgb(249, 244, 245);
     position: relative;
   }
 
   .img-text {
-    position: absolute;
-    right: 20px;
-    top: 15%;
+    height: 100%;
+    width: 95%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 3em;
   }
 }
@@ -35,17 +41,20 @@
 /* Desktop sizes */
 @media (min-width: 1024px){
   .home-img-container {
-    height: 750px;
+    height: 100%;
     width: 100%;
     background-color: rgb(249, 244, 245);
     position: relative;
   }
 
   .img-text {
-    position: absolute;
-    right: 50px;
-    top: 15%;
-    font-size: 5em;
+    height: 100%;
+    width: 95%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 4em;
   }
 }
 
