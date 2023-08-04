@@ -1,3 +1,5 @@
+import "../styles/LandingPageTemplateV2.css"
+
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";

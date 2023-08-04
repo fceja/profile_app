@@ -27,6 +27,8 @@
     width: 50%;
     height: 500px;
     background-color: pink;
+    display: flex;
+    flex-direction: column;
 }
 
 /* hamburger menu visibility */

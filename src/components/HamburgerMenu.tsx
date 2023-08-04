@@ -1,6 +1,7 @@
 import "../styles/HamburgerMenu.css";
 
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const HamburgerMenu = () => {
   /* state variables */
@@ -63,7 +64,11 @@ const HamburgerMenu = () => {
           <div className={burgerClass}></div>
         </div>
       </div>
-      <div className={menuClass} ref={menuRef}></div>
+      <div className={menuClass} ref={menuRef}>
+        <Link to="/" onClick={updateMenuVisibility}>Home</Link>
+        <Link to="/gallery" onClick={updateMenuVisibility}>Gallery</Link>
+        <Link to="/about" onClick={updateMenuVisibility}>About</Link>
+      </div>
     </>
   );
 };
