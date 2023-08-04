@@ -1,3 +1,6 @@
+import "../styles/MyGallery.css"
+import "../styles/image-gallery.scss"
+
 import React from "react";
 import ImageGallery from "react-image-gallery";
 
@@ -23,10 +26,10 @@ class MyGallery extends React.Component {
 
   render() {
     return (
-      <section className="react-image-gallery">
+      <section className="app-react-image-gallery">
         <ImageGallery
           items={images}
-          onPlay={this._onPlay.bind(this)}
+          // onPlay={this._onPlay.bind(this)}
         />
       </section>
     );
