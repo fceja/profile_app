@@ -19,21 +19,12 @@ const images = [
   },
 ];
 
-class MyGallery extends React.Component {
-  _onPlay(index: number) {
-    console.debug("playing from index", index);
-  }
-
-  render() {
+export default function MyGallery() {
     return (
       <section className="app-react-image-gallery">
         <ImageGallery
           items={images}
-          // onPlay={this._onPlay.bind(this)}
-        />
+          />
       </section>
     );
   }
-}
-
-export default MyGallery;
