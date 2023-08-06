@@ -1,4 +1,4 @@
-import "../styles/LandingPageTemplateV2.css"
+import "../styles/css/LandingPageTemplateV2.css"
 
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";

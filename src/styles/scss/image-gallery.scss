@@ -13,6 +13,35 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   }
 }
 
+// Container styles
+.app-react-image-gallery {
+  height: 50vh;
+}
+
+.image-gallery {
+  height: 100%
+}
+
+.image-gallery-content {
+  height: 100%;
+}
+
+.image-gallery-slide-wrapper {
+  height: 80%;
+}
+
+.image-gallery-thumbnails-wrapper {
+  height: 20%;
+}
+
+.image-gallery-swipe {
+  height: 100%;
+}
+
+.image-gallery-slides {
+  height: 100%;
+
+}
 // SVG ICON STYLES
 .image-gallery-icon {
   color: $ig-white;
@@ -161,6 +190,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
   .image-gallery-slide .image-gallery-image {
     max-height: calc(100vh - 80px); // 80 px for the thumbnail space
+    // max-height: calc(50vh - 80px); // 80 px for the thumbnail space
   }
 
   &.image-gallery-thumbnails-left,
@@ -352,6 +382,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 .image-gallery-thumbnails {
   overflow: hidden;
   padding: 5px 0;
+  height: 100%;
 
   @media (max-width: $ig-small-screen) {
     padding: 3px 0;
@@ -361,6 +392,12 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
     cursor: pointer;
     text-align: center;
     white-space: nowrap;
+    height: 100%;
+
+    button {
+      height: 63px;
+    }
+
   }
 
 }
