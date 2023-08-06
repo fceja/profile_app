@@ -1,4 +1,4 @@
-import "../styles/Header.css"
+import "../styles/css/Header.css"
 
 import React from "react";
 import SetScrollVar from "../scripts/ScrollScript";

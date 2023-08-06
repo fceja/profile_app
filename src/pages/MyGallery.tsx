@@ -1,5 +1,5 @@
-import "../styles/MyGallery.css"
-import "../styles/image-gallery.scss"
+import "../styles/css/MyGallery.css";
+import "../styles/scss/image-gallery.scss";
 
 import React from "react";
 import ImageGallery from "react-image-gallery";
@@ -20,11 +20,9 @@ const images = [
 ];
 
 export default function MyGallery() {
-    return (
-      <section className="app-react-image-gallery">
-        <ImageGallery
-          items={images}
-          />
-      </section>
-    );
-  }
+  return (
+    <section className="app-react-image-gallery">
+      <ImageGallery items={images} />
+    </section>
+  );
+}

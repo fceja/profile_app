@@ -1,4 +1,4 @@
-import "../styles/Logo.css";
+import "../styles/css/Logo.css";
 
 import React from "react";
 import SetScrollVar from "../scripts/ScrollScript";
