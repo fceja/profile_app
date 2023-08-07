@@ -1,9 +1,10 @@
-import "../styles/css/LandingPageTemplateV2.css"
+import "../styles/css/LandingPageTemplateV2.css";
+
+import { Link } from "react-router-dom";
+import React from "react";
 
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import React from "react";
 
 type LandingPageTemplateV2Props = {
   MainComponent: React.ComponentType;
