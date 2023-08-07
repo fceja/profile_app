@@ -1,12 +1,14 @@
 import "./styles/css/App.css";
 
-import About from "./pages/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
+
+import About from "./pages/About";
 import Home from "./pages/Home";
 import LandingPageTemplateV2 from "./templates/LandingPageTemplateV2";
 import Logo from "./components/Logo";
 import MyGallery from "./pages/MyGallery";
-import React from "react";
+
 
 function App() {
   return (
