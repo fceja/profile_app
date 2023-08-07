@@ -3,11 +3,15 @@ import React, { useEffect } from 'react';
 import { setElementVisibility } from './Actions';
 import { useDispatch } from 'react-redux';
 
-const ElementObserver: React.FC = () => {
+interface ElementObserverProps {
+    elemToObserve: string;
+  }
+
+const ElementObserver: React.FC<ElementObserverProps> = ({elemToObserve}) => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        observeElementVisibility('.image-gallery-slides', isVisible => {
+        observeElementVisibility(elemToObserve , isVisible => {
             dispatch(setElementVisibility(isVisible));
         });
     }, [dispatch]);

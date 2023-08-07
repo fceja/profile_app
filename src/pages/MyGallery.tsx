@@ -7,7 +7,7 @@ import { AppState } from "types";
 import ElementObserver from "ElementObserver";
 
 import ImageGallery from "react-image-gallery";
-interface AnotherComponentProps {
+interface MyGalleryProps {
   isElementVisible: boolean;
 }
 
@@ -26,12 +26,14 @@ const images = [
   },
 ];
 
-const AnotherComponent: React.FC<AnotherComponentProps> = ({
+const elemToObserveStr = '.image-gallery-slides';
+
+const MyGallery: React.FC<MyGalleryProps> = ({
   isElementVisible,
 }) => {
   return (
     <section className="app-react-image-gallery">
-      <ElementObserver />
+      <ElementObserver elemToObserve={elemToObserveStr}/>
       <ImageGallery items={images} />
       {isElementVisible ? null : <div>Loading...</div>}
     </section>
@@ -42,4 +44,4 @@ const mapStateToProps = (state: AppState) => ({
   isElementVisible: state.isElementVisible,
 });
 
-export default connect(mapStateToProps)(AnotherComponent);
+export default connect(mapStateToProps)(MyGallery);
