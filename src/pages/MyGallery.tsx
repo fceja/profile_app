@@ -1,13 +1,12 @@
 import "../styles/css/MyGallery.css";
 import "../styles/scss/image-gallery.scss";
 
-import ImageGallery from "react-image-gallery";
-
 import React from "react";
 import { connect } from "react-redux";
 import { AppState } from "types";
 import ElementObserver from "ElementObserver";
 
+import ImageGallery from "react-image-gallery";
 interface AnotherComponentProps {
   isElementVisible: boolean;
 }
@@ -34,7 +33,7 @@ const AnotherComponent: React.FC<AnotherComponentProps> = ({
     <section className="app-react-image-gallery">
       <ElementObserver />
       <ImageGallery items={images} />
-      <p>Is Element Visible: {isElementVisible ? "Yes" : "No"}</p>
+      {isElementVisible ? null : <div>Loading...</div>}
     </section>
   );
 };

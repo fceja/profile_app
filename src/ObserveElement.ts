@@ -1,16 +1,27 @@
-export const observeElementVisibility = (targetClass: string, callback: (isVisible: boolean) => void) => {
-    const observer = new IntersectionObserver(entries => {
-        const isVisible = entries.some(entry => entry.isIntersecting);
-        callback(isVisible)
-    });
+export const observeElementVisibility = (
+  targetClass: string,
+  callback: (isVisible: boolean) => void
+) => {
+  const observer = new IntersectionObserver((entries) => {
+    const isVisible = entries.some((entry) => entry.isIntersecting);
+    callback(isVisible);
+  });
 
-    console.log('targetClass is:')
-    console.log(targetClass)
+  const targetElement = document.querySelector(targetClass);
 
-    const targetElement = document.querySelector('.image-gallery-slide.image-gallery-center');
-    console.log('targetElement is:')
-    console.log(targetElement)
-    if (targetElement) {
+  if (targetElement) {
+    const imgElement = targetElement.querySelector("img");
+
+    if (imgElement) {
+      // Create a promise that resolves when the image loads
+      const imageLoadPromise = new Promise((resolve) => {
+        imgElement.addEventListener("load", resolve);
+      });
+
+      // Wait for the image to be loaded before observing
+      imageLoadPromise.then(() => {
         observer.observe(targetElement);
+      });
     }
-}
+  }
+};
