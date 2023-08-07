@@ -1,5 +1,5 @@
-import "../styles/MyGallery.css"
-import "../styles/image-gallery.scss"
+import "../styles/css/MyGallery.css";
+import "../styles/scss/image-gallery.scss";
 
 import React from "react";
 import ImageGallery from "react-image-gallery";
@@ -19,21 +19,10 @@ const images = [
   },
 ];
 
-class MyGallery extends React.Component {
-  _onPlay(index: number) {
-    console.debug("playing from index", index);
-  }
-
-  render() {
-    return (
-      <section className="app-react-image-gallery">
-        <ImageGallery
-          items={images}
-          // onPlay={this._onPlay.bind(this)}
-        />
-      </section>
-    );
-  }
+export default function MyGallery() {
+  return (
+    <section className="app-react-image-gallery">
+      <ImageGallery items={images} />
+    </section>
+  );
 }
-
-export default MyGallery;
