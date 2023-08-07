@@ -1,4 +1,4 @@
-import "../styles/NavBar.css";
+import "../styles/css/NavBar.css";
 
 import HamburgerMenu from './HamburgerMenu';
 import React from "react";
