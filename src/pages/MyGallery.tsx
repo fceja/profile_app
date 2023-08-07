@@ -1,8 +1,16 @@
 import "../styles/css/MyGallery.css";
 import "../styles/scss/image-gallery.scss";
 
-import React from "react";
 import ImageGallery from "react-image-gallery";
+
+import React from "react";
+import { connect } from "react-redux";
+import { AppState } from "types";
+import ElementObserver from "ElementObserver";
+
+interface AnotherComponentProps {
+  isElementVisible: boolean;
+}
 
 const images = [
   {
@@ -19,10 +27,20 @@ const images = [
   },
 ];
 
-export default function MyGallery() {
+const AnotherComponent: React.FC<AnotherComponentProps> = ({
+  isElementVisible,
+}) => {
   return (
     <section className="app-react-image-gallery">
+      <ElementObserver />
       <ImageGallery items={images} />
+      <p>Is Element Visible: {isElementVisible ? "Yes" : "No"}</p>
     </section>
   );
-}
+};
+
+const mapStateToProps = (state: AppState) => ({
+  isElementVisible: state.isElementVisible,
+});
+
+export default connect(mapStateToProps)(AnotherComponent);
