@@ -7,12 +7,12 @@ const ElementObserver: React.FC = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        observeElementVisibility('image-gallery-slide  image-gallery-center', isVisible => {
+        observeElementVisibility('.image-gallery-slides', isVisible => {
             dispatch(setElementVisibility(isVisible));
         });
     }, [dispatch]);
 
-    return <div className="element-observer">Observer Component</div>;
+    return null
 
 };
 
