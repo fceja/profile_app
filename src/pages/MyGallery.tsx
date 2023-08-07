@@ -3,8 +3,8 @@ import "../styles/scss/image-gallery.scss";
 
 import React from "react";
 import { connect } from "react-redux";
-import { AppState } from "types";
-import ElementObserver from "ElementObserver";
+import { AppState } from "redux/Types";
+import ElementObserver from "redux/utils/ElementObserver";
 
 import ImageGallery from "react-image-gallery";
 interface MyGalleryProps {

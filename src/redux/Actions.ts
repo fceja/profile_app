@@ -1,4 +1,4 @@
-import { SET_ELEMENT_VISIBILITY, SetElementVisibilityAction } from "./types";
+import { SET_ELEMENT_VISIBILITY, SetElementVisibilityAction } from "./Types";
 
 export const setElementVisibility = (
   isVisible: boolean

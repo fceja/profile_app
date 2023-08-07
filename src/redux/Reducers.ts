@@ -1,4 +1,4 @@
-import { SET_ELEMENT_VISIBILITY, AppActionTypes, AppState } from "./types";
+import { SET_ELEMENT_VISIBILITY, AppActionTypes, AppState } from "./Types";
 
 const initialState: AppState = {
     isElementVisible: false
