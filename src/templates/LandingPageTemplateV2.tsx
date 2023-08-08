@@ -22,7 +22,7 @@ export default function LandingPageTemplateV2({
       <MainComponent />
       <Link to="/">Home</Link>
       <Link to="/gallery">Gallery</Link>
-      <Link to="/about">About</Link>
+      <Link to="/contact">Contact</Link>
       <Footer />
     </div>
   );
