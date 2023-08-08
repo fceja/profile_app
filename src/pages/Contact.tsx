@@ -1,7 +1,13 @@
 import React from "react";
 
+import ContactInfo from "components/ContactInfo";
+import ContactForm from "components/ContactForm";
+
 export default function Contact() {
     return(
-    <div>This is Contact Page</div>
+        <div className="contact-info-form-container">
+            <ContactInfo />
+            <ContactForm />
+        </div>
     )
 }
