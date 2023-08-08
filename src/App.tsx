@@ -3,7 +3,7 @@ import "./styles/css/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 
-import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import LandingPageTemplateV2 from "./templates/LandingPageTemplateV2";
 import Logo from "./components/Logo";
@@ -27,7 +27,7 @@ function App() {
           />
           <Route
             path="about"
-            element={<LandingPageTemplateV2 MainComponent={About} />}
+            element={<LandingPageTemplateV2 MainComponent={Contact} />}
           />
         </Routes>
       </Router>

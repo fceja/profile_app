@@ -1,6 +1,6 @@
 import "../styles/css/Pages.css";
 
-import About from "../pages/About";
+import Contact from "../pages/Contact";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import MyGallery from "../pages/MyGallery";
 import Home from "../pages/Home";
@@ -13,7 +13,7 @@ export default function Pages() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="gallery" element={<MyGallery />} />
-          <Route path="about" element={<About />} />
+          <Route path="about" element={<Contact />} />
         </Routes>
         <Link to="/">Home</Link>
         <Link to="/gallery">Gallery</Link>
