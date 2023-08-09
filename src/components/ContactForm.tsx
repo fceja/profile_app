@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { FormEvent, useState, ChangeEvent, useEffect } from "react";
 
 export default function ContactForm() {
@@ -46,7 +47,7 @@ export default function ContactForm() {
     }
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setFormSubmitted(true);
 
@@ -56,6 +57,18 @@ export default function ContactForm() {
     if (hasErrors) {
       // has error, don't submit
       return;
+    }
+
+    try {
+      const response = await axios.post("http://localhost:3020/email/send", {
+        contactName: formData.name,
+        contactEmail: formData.email,
+        contactEmailMessage: formData.message,
+      });
+
+      console.log("Response: ", response.data);
+    } catch (error) {
+      console.error("Error: ", error);
     }
   };
 
