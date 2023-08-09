@@ -26,7 +26,7 @@ function App() {
             element={<LandingPageTemplateV2 MainComponent={MyGallery} />}
           />
           <Route
-            path="about"
+            path="contact"
             element={<LandingPageTemplateV2 MainComponent={Contact} />}
           />
         </Routes>

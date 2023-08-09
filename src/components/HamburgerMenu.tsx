@@ -67,7 +67,7 @@ const HamburgerMenu = () => {
       <div className={menuClass} ref={menuRef}>
         <Link to="/" onClick={updateMenuVisibility}>Home</Link>
         <Link to="/gallery" onClick={updateMenuVisibility}>Gallery</Link>
-        <Link to="/about" onClick={updateMenuVisibility}>About</Link>
+        <Link to="/contact" onClick={updateMenuVisibility}>Contact</Link>
       </div>
     </>
   );

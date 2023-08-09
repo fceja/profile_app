@@ -13,11 +13,11 @@ export default function Pages() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="gallery" element={<MyGallery />} />
-          <Route path="about" element={<Contact />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
         <Link to="/">Home</Link>
         <Link to="/gallery">Gallery</Link>
-        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
       </Router>
     </div>
   );
