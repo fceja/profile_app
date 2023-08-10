@@ -1,0 +1,8 @@
+@import "./Breakpoints";
+
+.contact-info-form-container {
+  @include media-query(sm-device) {
+    border-style: dashed;
+    border-color: red;
+  }
+}
