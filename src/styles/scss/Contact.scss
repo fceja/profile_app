@@ -1,8 +1,22 @@
 @import "./Breakpoints";
+@import "./Variables";
 
-.contact-info-form-container {
-  @include media-query(sm-device) {
+// apply styles to all device sizes
+@each $device in $device-sizes {
+  @include media-query($device) {
+    .contact-info-form-container {
+      border-style: dashed;
+      border-color: red;
+      height: 50vh;
+    }
+  }
+}
+
+// apply styles to specific screen size
+@include media-query(xs-device) {
+  .contact-info-form-container {
     border-style: dashed;
-    border-color: red;
+    border-color: purple;
+    height: 50vh;
   }
 }

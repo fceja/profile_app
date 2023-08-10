@@ -1,5 +1,5 @@
-// define breakpoints for device screen sizes
-$breakpoints: (
+// define min/max width breakpoints for device sizes
+$device-breakpoints: (
   xs-device: (
     max: 576px,
   ),
@@ -20,24 +20,24 @@ $breakpoints: (
   ),
 );
 
-// return media query for provided breakpoints
-@mixin media-query($breakpoint) {
+// return media query for provided device size
+@mixin media-query($device-size) {
   $media-query: null;
   $min-width: null;
   $max-width: null;
 
-  $breakpoint-config: map-get($breakpoints, $breakpoint);
+  $device-breakpoint-config: map-get($device-breakpoints, $device-size);
 
-  // if breapoint-config returned, set min/max width
-  @if $breakpoint-config{
+  // if device-breapoint-config returned, set min/max width
+  @if $device-breakpoint-config {
     $min-width: if(
-      map-has-key($breakpoint-config, min),
-      map-get($breakpoint-config, min),
+      map-has-key($device-breakpoint-config, min),
+      map-get($device-breakpoint-config, min),
       null
     );
     $max-width: if(
-      map-has-key($breakpoint-config, max),
-      map-get($breakpoint-config, max),
+      map-has-key($device-breakpoint-config, max),
+      map-get($device-breakpoint-config, max),
       null
     );
   }
