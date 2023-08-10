@@ -20,3 +20,61 @@
     height: 50vh;
   }
 }
+
+.contact-info-form-container {
+  align-items: center;
+  border-style: dashed;
+  border-color: aqua;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+
+  div.contact-info {
+    border-style: dashed;
+    border-color: blue;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+  }
+  form.contact-form {
+    align-items: center;
+    border-style: dashed;
+    border-color: green;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    div.form-row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      button {
+        width: 50%;
+      }
+
+      div.div-label {
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      div.div-input {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        input {
+          width: 80%;
+        }
+
+        textarea {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 80%;
+        }
+      }
+    }
+  }
+}

@@ -74,42 +74,59 @@ export default function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <div>
-        <label>Name</label>
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleInputChange}
-        />
-        {formErrors.name && (
-          <span className="error-name">{formErrors.name}</span>
-        )}
+      <div className="form-row">
+        <div className="div-label">
+          <label className="contact-form-label">Name:</label>
+        </div>
+        <div className="div-input">
+          <input
+            className="contact-form-input"
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
+          />
+          {formErrors.name && (
+            <span className="error-name">{formErrors.name}</span>
+          )}
+        </div>
       </div>
-      <div>
-        <label>Email</label>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleInputChange}
-        />
-        {formErrors.email && (
-          <span className="error-email">{formErrors.email}</span>
-        )}
+      <div className="form-row">
+        <div className="div-label">
+          <label className="contact-form-label">Email:</label>
+        </div>
+        <div className="div-input">
+          <input
+            className="contact-form-input"
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+          />
+          {formErrors.email && (
+            <span className="error-email">{formErrors.email}</span>
+          )}
+        </div>
       </div>
-      <div>
-        <label>Message</label>
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleInputChange}
-        />
-        {formErrors.message && (
-          <span className="error-message">{formErrors.message}</span>
-        )}
+      <div className="form-row">
+        <div className="div-label">
+          <label className="contact-form-label">Message:</label>
+        </div>
+        <div className="div-input">
+          <textarea
+            className="contact-form-input"
+            name="message"
+            value={formData.message}
+            onChange={handleInputChange}
+          />
+          {formErrors.message && (
+            <span className="error-message">{formErrors.message}</span>
+          )}
+        </div>
       </div>
-      <button type="submit">Submit</button>
+      <div className="form-row">
+        <button type="submit">Submit</button>
+      </div>
     </form>
   );
 }
