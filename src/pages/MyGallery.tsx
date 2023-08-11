@@ -1,4 +1,3 @@
-import "../styles/scss/MyGallery.scss";
 import "../styles/scss/third-party/image-gallery.scss";
 
 import React from "react";

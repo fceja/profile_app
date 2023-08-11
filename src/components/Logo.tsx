@@ -8,7 +8,6 @@ export default function Logo() {
 
   return (
     <div className="img-container">
-      {/* Testing */}
       <img className="img-hero" src="images/PopsAndSonsLogo.png"/>
     </div>
   )

@@ -10,7 +10,7 @@ import MyGallery from "../pages/MyGallery";
 
 function LandingPage() {
   return (
-    <div className="App">
+    <div className="landing-page" id="landing-page">
       <Router>
         <Routes>
           <Route

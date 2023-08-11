@@ -8,7 +8,7 @@
 }
 
 .img-hero {
-  width: 80%;
+  width: 50%;
   translate: 0 calc(-1% * (max(var(--scroll), 2) - 2) * 100 / 98);
   margin: $default-container-margin;
 }
