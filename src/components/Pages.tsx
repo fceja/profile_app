@@ -1,4 +1,4 @@
-import "../styles/css/Pages.css";
+import "../styles/scss/Pages.scss";
 
 import Contact from "../pages/Contact";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";

@@ -1,4 +1,4 @@
-import '/css/LandingPageTemplateV1.css'
+import '../styles/scss/LandingPageTemplateV1.scss'
 
 import Footer from "../components/Footer";
 import Logo from "../components/Logo";

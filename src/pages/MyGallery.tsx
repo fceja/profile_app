@@ -1,5 +1,5 @@
-import "../styles/css/MyGallery.css";
-import "../styles/scss/image-gallery.scss";
+import "../styles/scss/MyGallery.scss";
+import "../styles/scss/third-party/image-gallery.scss";
 
 import React from "react";
 import { connect } from "react-redux";

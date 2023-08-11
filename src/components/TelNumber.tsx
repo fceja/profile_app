@@ -1,4 +1,4 @@
-import "../styles/css/TelNumber.css"
+import "../styles/scss/TelNumber.scss"
 
 import React from "react";
 

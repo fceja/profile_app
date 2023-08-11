@@ -1,4 +1,4 @@
-import "../styles/css/LandingPageTemplateV2.css";
+import "../styles/scss/LandingPageTemplateV2.scss";
 
 import { Link } from "react-router-dom";
 import React from "react";
@@ -20,9 +20,9 @@ export default function LandingPageTemplateV2({
       {OptionalComponent && <OptionalComponent />}
       <NavBar />
       <MainComponent />
-      <Link to="/">Home</Link>
-      <Link to="/gallery">Gallery</Link>
-      <Link to="/contact">Contact</Link>
+      <Link to="/" className="bottom-link">Home</Link>
+      <Link to="/gallery" className="bottom-link">Gallery</Link>
+      <Link to="/contact" className="bottom-link">Contact</Link>
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-import "../styles/css/Logo.css";
+import "../styles/scss/Logo.scss";
 
 import React from "react";
 import SetScrollVar from "../scripts/ScrollScript";
@@ -8,6 +8,7 @@ export default function Logo() {
 
   return (
     <div className="img-container">
+      {/* Testing */}
       <img className="img-hero" src="images/PopsAndSonsLogo.png"/>
     </div>
   )

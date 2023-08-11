@@ -1,6 +1,6 @@
-import "./styles/css/index.css";
+import "./styles/scss/Index.scss";
 
-import App from "./App";
+import LandingPage from "./components/LandingPage";
 import { Provider } from "react-redux";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <LandingPage />
     </Provider>
   </React.StrictMode>
 );

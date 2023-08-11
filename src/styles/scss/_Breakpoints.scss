@@ -21,42 +21,46 @@ $device-breakpoints: (
 );
 
 // return media query for provided device size
-@mixin media-query($device-size) {
-  $media-query: null;
-  $min-width: null;
-  $max-width: null;
+// @mixin media-query($device-size) {
+@mixin media-query($device-sizes) {
+  @each $device-size in $device-sizes {
+    $media-query: null;
+    $min-width: null;
+    $max-width: null;
 
-  $device-breakpoint-config: map-get($device-breakpoints, $device-size);
+    $device-breakpoint-config: map-get($device-breakpoints, $device-size);
 
-  // if device-breapoint-config returned, set min/max width
-  @if $device-breakpoint-config {
-    $min-width: if(
-      map-has-key($device-breakpoint-config, min),
-      map-get($device-breakpoint-config, min),
-      null
-    );
-    $max-width: if(
-      map-has-key($device-breakpoint-config, max),
-      map-get($device-breakpoint-config, max),
-      null
-    );
-  }
-
-  // generate media query
-  @if $min-width and $max-width {
-    $media-query: "(min-width: #{$min-width}) and (max-width: #{$max-width})";
-  } @else if $min-width {
-    $media-query: "(min-width: #{$min-width})";
-  } @else if $max-width {
-    $media-query: "(max-width: #{$max-width})";
-  }
-
-  // set media query content if generated, else throw error
-  @if $media-query {
-    @media #{$media-query} {
-      @content;
+    // if device-breapoint-config returned, set min/max width
+    @if $device-breakpoint-config {
+      $min-width: if(
+        map-has-key($device-breakpoint-config, min),
+        map-get($device-breakpoint-config, min),
+        null
+      );
+      $max-width: if(
+        map-has-key($device-breakpoint-config, max),
+        map-get($device-breakpoint-config, max),
+        null
+      );
     }
-  } @else {
-    @error "No valid media query found for #{$breakpoint}.";
+
+    // generate media query
+    @if $min-width and $max-width {
+      $media-query: "(min-width: #{$min-width}) and (max-width: #{$max-width})";
+    } @else if $min-width {
+      $media-query: "(min-width: #{$min-width})";
+    } @else if $max-width {
+      $media-query: "(max-width: #{$max-width})";
+    }
+
+    // set media query content if generated, else throw error
+    @if $media-query {
+      @media #{$media-query} {
+        @content;
+      }
+    } @else {
+      content: $breakpoint;
+      @error "No valid media query found for #{$breakpoint}.";
+    }
   }
 }

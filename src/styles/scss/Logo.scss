@@ -1,0 +1,19 @@
+@import "./Variables";
+
+.img-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  opacity: calc(1 - (var(--scroll) * 0.025));
+}
+
+.img-hero {
+  width: 80%;
+  translate: 0 calc(-1% * (max(var(--scroll), 2) - 2) * 100 / 98);
+  margin: $default-container-margin;
+}
+
+/* default to zero incase js script fails */
+:root {
+  --scroll: 0;
+}

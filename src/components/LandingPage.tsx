@@ -1,16 +1,14 @@
-import "./styles/css/App.css";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import LandingPageTemplateV2 from "./templates/LandingPageTemplateV2";
-import Logo from "./components/Logo";
-import MyGallery from "./pages/MyGallery";
+import Contact from "../pages/Contact";
+import Home from "../pages/Home";
+import LandingPageTemplateV2 from "../templates/LandingPageTemplateV2";
+import Logo from "./Logo";
+import MyGallery from "../pages/MyGallery";
 
 
-function App() {
+function LandingPage() {
   return (
     <div className="App">
       <Router>
@@ -35,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default LandingPage;

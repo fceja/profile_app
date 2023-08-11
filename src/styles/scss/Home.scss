@@ -1,0 +1,71 @@
+@import "./Breakpoints";
+@import "./Variables";
+
+.home-img-container {
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(249, 244, 245);
+    position: relative;
+    margin: 50px 0 50px 0;
+}
+
+.img-text {
+    height: 100%;
+    width: 95%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.img-gradient-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, transparent, white);
+  position: absolute;
+}
+
+.img-main {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5em;
+  border-bottom-left-radius: 5em;
+  object-fit: cover;
+}
+
+/* sm screen sizes */
+@include media-query(xs-device) {
+    .img-text {
+        font-size: 2em;
+    }
+}
+
+/* sm screen sizes */
+@include media-query(sm-device) {
+    .img-text {
+        font-size: 3em;
+    }
+}
+
+/* md screen sizes */
+@include media-query(md-device) {
+  .img-text {
+    font-size: 4em;
+  }
+}
+
+/* lg-xl screen sizes */
+@include media-query((lg-device, xl-device)) {
+  .img-text {
+    font-size: 4em;
+  }
+}
