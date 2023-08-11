@@ -1,10 +1,11 @@
 import "../styles/scss/Pages.scss";
 
-import Contact from "../pages/Contact";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+
+import Contact from "../pages/Contact";
 import MyGallery from "../pages/MyGallery";
 import Home from "../pages/Home";
-import React from "react";
 
 export default function Pages() {
   return (

@@ -1,10 +1,11 @@
 import "./styles/scss/Index.scss";
 
-import LandingPage from "./components/LandingPage";
-import { Provider } from "react-redux";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./tests/reportWebVitals";
+
+import LandingPage from "./components/LandingPage";
+import { Provider } from "react-redux";
 import store from "./redux/Store";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);

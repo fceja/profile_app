@@ -3,6 +3,8 @@ import "../styles/scss/HamburgerMenu.scss";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
+import ScrollToTop from "scripts/ScrollToTop";
+
 const HamburgerMenu = () => {
   /* state variables */
   const [burgerClass, setBurgerClass] = useState("hamburger-bar unclicked");
@@ -12,18 +14,17 @@ const HamburgerMenu = () => {
 
   /* handles closure of menu if clicked outside menu container */
   const handleClickOutsideMenu = (event: MouseEvent) => {
-
     const targetNode = event.target as Node;
 
     if (
       isMenuClicked &&
       menuRef.current &&
       !menuRef.current.contains(targetNode) &&
-      (targetNode instanceof HTMLElement) &&
-      (targetNode.className !==
+      targetNode instanceof HTMLElement &&
+      targetNode.className !==
         "hamburger-menu-bar-container" /* exclude since handled in onClick */ &&
       targetNode.className !==
-        "hamburger-bar clicked") /* exclude since handled in onClick */
+        "hamburger-bar clicked" /* exclude since handled in onClick */
     ) {
       updateMenuVisibility();
     }
@@ -52,6 +53,11 @@ const HamburgerMenu = () => {
     setIsMenuClicked(!isMenuClicked);
   };
 
+  const handleOnClick = () => {
+    updateMenuVisibility();
+    ScrollToTop();
+  };
+
   return (
     <>
       <div className="hamburger-menu-container">
@@ -65,9 +71,15 @@ const HamburgerMenu = () => {
         </div>
       </div>
       <div className={menuClass} ref={menuRef}>
-        <Link to="/" onClick={updateMenuVisibility}>Home</Link>
-        <Link to="/gallery" onClick={updateMenuVisibility}>Gallery</Link>
-        <Link to="/contact" onClick={updateMenuVisibility}>Contact</Link>
+        <Link to="/" onClick={handleOnClick}>
+          Home
+        </Link>
+        <Link to="/gallery" onClick={handleOnClick}>
+          Gallery
+        </Link>
+        <Link to="/contact" onClick={handleOnClick}>
+          Contact
+        </Link>
       </div>
     </>
   );

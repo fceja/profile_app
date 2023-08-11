@@ -1,6 +1,6 @@
-import React from "react";
-
 import "../styles/scss/Home.scss";
+
+import React from "react";
 
 export default function Home() {
   return (

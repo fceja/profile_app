@@ -1,5 +1,6 @@
-import { observeElementVisibility } from './ObserveImageElement';
 import React, { useEffect } from 'react';
+
+import { observeElementVisibility } from './ObserveImageElement';
 import { setElementVisibility } from '../Actions';
 import { useDispatch } from 'react-redux';
 
