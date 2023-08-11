@@ -6,12 +6,12 @@ $ig-xsmall-screen: 480px !default;
 $ig-white: #fff !default;
 $ig-black: #000 !default;
 $ig-blue: #337ab7 !default;
-$ig-background-black: rgba(0, 0, 0, .4) !default;
+$ig-background-black: rgba(0, 0, 0, 0.4) !default;
 $ig-transparent: rgba(0, 0, 0, 0) !default;
 $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
 @mixin vendor-prefix($name, $value) {
-  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+  @each $vendor in ("-webkit-", "-moz-", "-ms-", "-o-", "") {
     #{$vendor}#{$name}: #{$value};
   }
 }
@@ -23,7 +23,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 }
 
 .image-gallery {
-  height: 100%
+  height: 100%;
 }
 
 .image-gallery-content {
@@ -47,12 +47,11 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
 .image-gallery-slides {
   height: 100%;
-
 }
 // SVG ICON STYLES
 .image-gallery-icon {
   color: $ig-white;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   appearance: none;
   background-color: transparent;
   border: 0;
@@ -149,7 +148,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
   &[disabled] {
     cursor: disabled;
-    opacity: .6;
+    opacity: 0.6;
     pointer-events: none;
   }
 }
@@ -164,7 +163,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 // End of Icon styles
 
 .image-gallery {
-  @include vendor-prefix('user-select', none);
+  @include vendor-prefix("user-select", none);
   -webkit-tap-highlight-color: $ig-transparent;
   position: relative;
 
@@ -260,10 +259,9 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
     @media (max-width: $ig-small-screen) {
       bottom: 45px;
-      font-size: .8em;
+      font-size: 0.8em;
       padding: 8px 15px;
     }
-
   }
 }
 
@@ -293,7 +291,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
     margin: 0 5px;
     outline: none;
     padding: 5px;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
 
     @media (max-width: $ig-small-screen) {
       margin: 0 3px;
@@ -370,9 +368,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
           margin-left: 0;
           margin-top: 2px;
         }
-
       }
-
     }
   }
 
@@ -404,15 +400,13 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
     button {
       height: 63px;
     }
-
   }
-
 }
 
 .image-gallery-thumbnail {
   display: inline-block;
   border: 4px solid transparent;
-  transition: border .3s ease-out;
+  transition: border 0.3s ease-out;
   width: 100px;
   background: transparent;
   padding: 0;
@@ -457,7 +451,6 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
       }
     }
   }
-
 }
 
 .image-gallery-thumbnail-label {
@@ -474,9 +467,9 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   white-space: normal;
   width: 100%;
 
-  @media(max-width: $ig-small-screen) {
-    font-size: .8em;
-    line-height: .8em;
+  @media (max-width: $ig-small-screen) {
+    font-size: 0.8em;
+    line-height: 0.8em;
   }
 }
 
@@ -490,8 +483,8 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   top: 0;
   z-index: 4;
 
-  @media(max-width: $ig-small-screen) {
-    font-size: .8em;
+  @media (max-width: $ig-small-screen) {
+    font-size: 0.8em;
     padding: 5px 10px;
   }
 }
@@ -647,6 +640,8 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
 .app-interval-input {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: table-cell;
   margin: 0;
   padding: 9px;
