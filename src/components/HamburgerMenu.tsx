@@ -1,4 +1,4 @@
-import "../styles/scss/HamburgerMenu.scss";
+import "../styles/HamburgerMenu.scss";
 
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";

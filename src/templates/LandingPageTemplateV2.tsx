@@ -1,4 +1,4 @@
-import "../styles/scss/LandingPageTemplateV2.scss";
+import "../styles/LandingPageTemplateV2.scss";
 
 import { Link } from "react-router-dom";
 import React from "react";

@@ -1,4 +1,4 @@
-import "../styles/scss/Pages.scss";
+import "../styles/Pages.scss";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React from "react";

@@ -1,4 +1,4 @@
-import "../styles/scss/Footer.scss";
+import "../styles/Footer.scss";
 
 import React from "react";
 

@@ -1,4 +1,4 @@
-import '../styles/scss/LandingPageTemplateV1.scss'
+import '../styles/LandingPageTemplateV1.scss'
 
 import React from "react";
 

@@ -1,4 +1,4 @@
-import "../styles/scss/NavBar.scss";
+import "../styles/NavBar.scss";
 
 import React from "react";
 
