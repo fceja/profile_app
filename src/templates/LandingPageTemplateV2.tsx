@@ -5,7 +5,7 @@ import React from "react";
 
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import ScrollToTop from "scripts/ScrollToTop";
+import ScrollToTop from "ts/scripts/ScrollToTop";
 
 type LandingPageTemplateV2Props = {
   MainComponent: React.ComponentType;

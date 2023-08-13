@@ -3,7 +3,7 @@ import "../styles/HamburgerMenu.scss";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import ScrollToTop from "scripts/ScrollToTop";
+import ScrollToTop from "ts/scripts/ScrollToTop";
 
 const HamburgerMenu = () => {
   /* state variables */
