@@ -5,7 +5,7 @@ import React from "react";
 
 import Contact from "../pages/Contact";
 import MyGallery from "../pages/MyGallery";
-import Home from "../pages/Home";
+import Home from "../pages/home/Home";
 
 export default function Pages() {
   return (
