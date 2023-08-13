@@ -14,7 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigate to={PAGE_PATHS.HOME} />} />
         <Route
-          path={`${PAGE_PATHS.HOME}`}
+          path={PAGE_PATHS.HOME}
           element={
             <LandingPageTemplateV2
               MainComponent={Home}
@@ -23,11 +23,11 @@ const App = () => {
           }
         />
         <Route
-          path={`${PAGE_PATHS.GALLERY}`}
+          path={PAGE_PATHS.GALLERY}
           element={<LandingPageTemplateV2 MainComponent={MyGallery} />}
         />
         <Route
-          path={`${PAGE_PATHS.CONTACT}`}
+          path={PAGE_PATHS.CONTACT}
           element={<LandingPageTemplateV2 MainComponent={Contact} />}
         />
       </Routes>
