@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 
-import Contact from "../pages/Contact";
+import Contact from "../pages/contact/Contact";
 import Home from "../pages/home/Home";
 import LandingPageTemplateV2 from "../templates/LandingPageTemplateV2";
 import Logo from "./Logo";
-import MyGallery from "../pages/MyGallery";
+import MyGallery from "../pages/mygallery/MyGallery";
 
 
 function LandingPage() {

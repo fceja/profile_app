@@ -3,8 +3,8 @@ import "../styles/Pages.scss";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React from "react";
 
-import Contact from "../pages/Contact";
-import MyGallery from "../pages/MyGallery";
+import Contact from "../pages/contact/Contact";
+import MyGallery from "../pages/mygallery/MyGallery";
 import Home from "../pages/home/Home";
 
 export default function Pages() {

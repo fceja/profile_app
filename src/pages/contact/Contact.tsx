@@ -1,4 +1,4 @@
-import "../styles/Contact.scss"
+import "../../styles/Contact.scss"
 
 import React from "react";
 

@@ -1,4 +1,4 @@
-import "../styles/third-party/image-gallery.scss";
+import "../../styles/third-party/image-gallery.scss";
 
 import React, { useEffect } from "react";
 
