@@ -151,6 +151,18 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.fullscreen-modal {
+    background: $ig-black;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
 }
 
 .image-gallery-content {
