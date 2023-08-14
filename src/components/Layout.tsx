@@ -1,3 +1,5 @@
+import "../styles/Layout.scss";
+
 import React from "react";
 
 import Logo from "./Logo";

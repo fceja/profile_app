@@ -8,8 +8,8 @@ export default function Logo() {
   SetScrollVar();
 
   return (
-    <div className="img-container">
-      <img className="img-hero" src="images/PopsAndSonsLogo.png"/>
+    <div className="img-logo-container">
+      <img className="img-logo-hero" src="images/PopsAndSonsLogo.png"/>
     </div>
   )
 }

@@ -2,64 +2,64 @@
 @import "./Variables";
 
 .home-img-container {
-    height: 60vh;
-    width: 100%;
-    background-color: rgb(249, 244, 245);
-    position: relative;
-    margin: 100px 0 50px 0;
+  background-color: rgb(249, 244, 245);
+  height: 60vh;
+  margin: 100px 0 50px 0;
+  position: relative;
+  width: 100%;
 }
 
 .img-text {
-    height: 100%;
-    width: 95%;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  position: relative;
+  width: 95%;
 }
 
 .img-gradient-container {
-  height: 100%;
-  width: 100%;
-  position: absolute;
   left: 50%;
+  height: 100%;
+  position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .gradient {
-  height: 100%;
-  width: 100%;
   background-image: linear-gradient(to right, transparent, white);
+  height: 100%;
   position: absolute;
+  width: 100%;
 }
 
 .img-main {
-  height: 100%;
-  width: 100%;
-  border-top-left-radius: 5em;
   border-bottom-left-radius: 5em;
+  border-top-left-radius: 5em;
+  height: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
 /* sm screen sizes */
 @include media-query(xs-device) {
-    .img-text {
-        font-size: 2em;
-    }
+  .img-text {
+    font-size: 2em;
+  }
 }
 
 /* sm screen sizes */
 @include media-query(sm-device) {
-    .img-text {
-        font-size: 3em;
-    }
+  .img-text {
+    font-size: 3em;
+  }
 }
 
 /* md screen sizes */
 @include media-query(md-device) {
   .img-text {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
 

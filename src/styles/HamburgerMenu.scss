@@ -1,34 +1,34 @@
 .hamburger-menu-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
     align-items: flex-start;
+    display: flex;
+    height: 100%;
     position: relative;
+    width: 100%;
 }
 
 .hamburger-menu-bar-container {
-    height: 100%;
-    width: 4em;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: space-evenly;
-    cursor: pointer;
     margin-left: 5%;
+    width: 4em;
 }
 
 .hamburger-bar {
-    width: 4em;
-    height: 0.5em;
     background-color: teal;
     border-radius: 0.5em;
+    height: 0.5em;
+    width: 4em;
 }
 
 .menu {
-    width: 50%;
-    height: 500px;
     background-color: pink;
     display: flex;
     flex-direction: column;
+    height: 500px;
+    width: 50%;
 }
 
 /* hamburger menu visibility */
@@ -47,9 +47,7 @@
 /* animations */
 .hamburger-bar.clicked:nth-child(1) {
     transform: rotate(45deg) translate(0.65em, 1.25em);
-
     transition: ease-out 0.5s;
-
 }
 
 .hamburger-bar.clicked:nth-child(2) {

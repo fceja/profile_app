@@ -1,18 +1,6 @@
 @import "./Breakpoints";
 @import "./Variables";
 
-// apply styles to all device sizes
-@each $device in $device-sizes {
-  @include media-query($device) {
-    .contact-info-form-container {
-      border-style: dashed;
-      border-color: red;
-      height: 50vh;
-      margin: $default-container-margin-top-bottom;
-    }
-  }
-}
-
 // apply styles to specific screen size
 @include media-query(xs-device) {
   .contact-info-form-container {
@@ -27,15 +15,16 @@
   border-style: dashed;
   border-color: aqua;
   display: flex;
+  flex: 1;
   justify-content: center;
-  width: 100vw;
+  margin: $default-container-margin-top-bottom;
 
   div.contact-info {
     border-style: dashed;
     border-color: blue;
-    width: 40%;
     height: 100%;
     text-align: center;
+    width: 40%;
   }
   form.contact-form {
     align-items: center;
@@ -46,24 +35,24 @@
     width: 100%;
 
     div.form-row {
-      width: 100%;
       display: flex;
       justify-content: center;
+      width: 100%;
 
       button {
         width: 50%;
       }
 
       div.div-label {
-        width: 30%;
         display: flex;
         justify-content: flex-end;
+        width: 30%;
       }
 
       div.div-input {
-        width: 100%;
         display: flex;
         justify-content: center;
+        width: 100%;
 
         input {
           width: 80%;

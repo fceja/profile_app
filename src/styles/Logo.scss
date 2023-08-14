@@ -1,16 +1,17 @@
 @import "./Variables";
 
-.img-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+.img-logo-container {
   opacity: calc(1 - (var(--scroll) * 0.025));
 }
 
-.img-hero {
-  width: 50%;
-  translate: 0 calc(-1% * (max(var(--scroll), 2) - 2) * 100 / 98);
+.img-logo-hero {
+  display: flex;
   margin: $default-container-margin;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  translate: 0 calc(-1% * (max(var(--scroll), 2) - 2) * 100 / 98);
+  width: 50%;
 }
 
 /* default to zero incase js script fails */
