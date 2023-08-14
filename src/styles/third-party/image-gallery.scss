@@ -28,15 +28,6 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   height: 20%;
 }
 
-.image-gallery-swipe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-}
-
 // SVG ICON STYLES
 .image-gallery-icon {
   color: $ig-white;
@@ -193,7 +184,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 }
 
 .image-gallery-slide-wrapper {
-  height: 80%;
+  // height: 80%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -214,10 +205,17 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   }
 }
 
+.image-gallery-swipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
 .image-gallery-slides {
   overflow: hidden;
   position: relative;
-  height: 100%;
   width: 100%;
 }
 
