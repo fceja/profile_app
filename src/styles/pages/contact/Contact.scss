@@ -1,5 +1,5 @@
-@import "./Breakpoints";
-@import "./Variables";
+@import "~/src/styles/Breakpoints";
+@import "~/src/styles/Variables";
 
 // apply styles to specific screen size
 @include media-query(xs-device) {

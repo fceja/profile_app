@@ -1,12 +1,12 @@
-import "../styles/App.scss"
+import "../../styles/App.scss"
 
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 
-import ContactContainer from "pages/contact/ContactContainer";
-import HomeContainer from "pages/home/HomeContainer";
-import LayoutContainer from "./LayoutContainer";
-import MyGalleryContainer from "pages/mygallery/MyGalleryContainer";
+import ContactContainer from "ts/pages/contact/ContactContainer";
+import HomeContainer from "ts/pages/home/HomeContainer";
+import LayoutContainer from "ts/pages/LayoutContainer";
+import MyGalleryContainer from "ts/pages/myGallery/MyGalleryContainer";
 import { PAGE_PATHS } from "ts/common/Contants";
 
 const App = () => {

@@ -1,9 +1,9 @@
-import "../../styles/Contact.scss"
+import "../../../styles/pages/contact/Contact.scss"
 
 import React from "react";
 
-import ContactInfo from "components/ContactInfo";
-import ContactForm from "components/ContactForm";
+import ContactInfo from "ts/components/contactInfo/ContactInfo";
+import ContactForm from "ts/components/contactForm/ContactForm";
 
 export default function Contact() {
     return(

@@ -1,11 +1,11 @@
-import "../styles/Layout.scss";
+import "../../styles/pages/Layout.scss"
 
 import React from "react";
 
-import Logo from "./Logo";
+import Logo from "../components/logo/Logo";
 import { PAGE_PATHS } from "ts/common/Contants";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from "../components/navBar/NavBar";
+import Footer from "../components/footer/Footer";
 
 interface LayoutProps {
   children: React.ReactNode;

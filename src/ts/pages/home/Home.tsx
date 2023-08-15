@@ -1,4 +1,4 @@
-import "../../styles/Home.scss";
+import "../../../styles/pages/home/Home.scss";
 
 import React from "react";
 

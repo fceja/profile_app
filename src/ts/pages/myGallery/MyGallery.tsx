@@ -1,10 +1,10 @@
-import "../../styles/third-party/image-gallery.scss";
+import "../../../styles/pages/imageGallery/ImageGallery.scss";
 
 import React, { useEffect } from "react";
 
-import { AppState } from "redux/Types";
+import { AppState } from "ts/redux/Types";
 import { connect } from "react-redux";
-import ElementObserver from "redux/utils/ElementObserver";
+import ElementObserver from "ts/redux/utils/ElementObserver";
 import ImageGallery from "react-image-gallery";
 interface MyGalleryProps {
   isElementVisible: boolean;

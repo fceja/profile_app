@@ -1,9 +1,9 @@
-import "../styles/NavBar.scss";
+import "../../../styles/components/navBar/NavBar.scss";
 
 import React from "react";
 
-import HamburgerMenu from "./HamburgerMenu";
-import TelNumber from "./TelNumber";
+import HamburgerMenu from "../hamburgerMenu/HamburgerMenu";
+import TelNumber from "../telNumber/TelNumber";
 
 export default function NavBar() {
   return (
