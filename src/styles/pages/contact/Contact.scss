@@ -1,15 +1,6 @@
 @import "../../Breakpoints";
 @import "../../Variables";
 
-// apply styles to specific screen size
-@include media-query(xs-device) {
-  .contact-info-form-container {
-    border-style: dashed;
-    border-color: purple;
-    height: 50vh;
-  }
-}
-
 .contact-info-form-container {
   align-items: center;
   border-style: dashed;
@@ -18,53 +9,4 @@
   flex: 1;
   justify-content: center;
   margin: $default-container-margin-top-bottom;
-
-  div.contact-info {
-    border-style: dashed;
-    border-color: blue;
-    height: 100%;
-    text-align: center;
-    width: 50%;
-  }
-  form.contact-form {
-    align-items: center;
-    border-style: dashed;
-    border-color: green;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-
-    div.form-row {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-
-      button {
-        width: 50%;
-      }
-
-      div.div-label {
-        display: flex;
-        justify-content: flex-end;
-        width: 30%;
-      }
-
-      div.div-input {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-
-        input {
-          width: 80%;
-        }
-
-        textarea {
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          width: 81.25%;
-        }
-      }
-    }
-  }
 }

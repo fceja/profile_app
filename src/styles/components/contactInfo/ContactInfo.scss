@@ -7,3 +7,10 @@ section {
 .contact-info {
   margin: 10px;
 }
+
+div.contact-info {
+  border-style: dashed;
+  border-color: blue;
+  text-align: center;
+  width: 50%;
+}

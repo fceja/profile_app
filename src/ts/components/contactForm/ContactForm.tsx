@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { FormEvent, useState, ChangeEvent, useEffect } from "react";
 
+import "../../../styles/components/contactForm/ContactForm.scss";
+
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -73,60 +75,63 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <div className="form-row">
-        <div className="div-label">
-          <label className="contact-form-label">Name:</label>
+    <div className="contact-form-container">
+      <div className="form-title">Send us a message</div>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="form-row-input">
+          <div className="div-label">
+            <label className="contact-form-label">Name:</label>
+          </div>
+          <div className="div-input">
+            <input
+              className="contact-form-input"
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+            />
+            {formErrors.name && (
+              <span className="error-name">{formErrors.name}</span>
+            )}
+          </div>
         </div>
-        <div className="div-input">
-          <input
-            className="contact-form-input"
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-          />
-          {formErrors.name && (
-            <span className="error-name">{formErrors.name}</span>
-          )}
+        <div className="form-row-input">
+          <div className="div-label">
+            <label className="contact-form-label">Email:</label>
+          </div>
+          <div className="div-input">
+            <input
+              className="contact-form-input"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+            />
+            {formErrors.email && (
+              <span className="error-email">{formErrors.email}</span>
+            )}
+          </div>
         </div>
-      </div>
-      <div className="form-row">
-        <div className="div-label">
-          <label className="contact-form-label">Email:</label>
+        <div className="form-row-textarea">
+          <div className="div-label">
+            <label className="contact-form-label">Message:</label>
+          </div>
+          <div className="div-input">
+            <textarea
+              className="contact-form-input"
+              name="message"
+              value={formData.message}
+              onChange={handleInputChange}
+            />
+            {formErrors.message && (
+              <span className="error-message">{formErrors.message}</span>
+            )}
+          </div>
         </div>
-        <div className="div-input">
-          <input
-            className="contact-form-input"
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-          />
-          {formErrors.email && (
-            <span className="error-email">{formErrors.email}</span>
-          )}
+        <div className="form-row-btn">
+          <button type="submit">Submit</button>
         </div>
-      </div>
-      <div className="form-row">
-        <div className="div-label">
-          <label className="contact-form-label">Message:</label>
-        </div>
-        <div className="div-input">
-          <textarea
-            className="contact-form-input"
-            name="message"
-            value={formData.message}
-            onChange={handleInputChange}
-          />
-          {formErrors.message && (
-            <span className="error-message">{formErrors.message}</span>
-          )}
-        </div>
-      </div>
-      <div className="form-row">
-        <button type="submit">Submit</button>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 }
