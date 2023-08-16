@@ -1,6 +1,6 @@
-import "../../../styles/components/footer/Footer.scss";
-
 import React from "react";
+
+import "../../../styles/components/footer/Footer.scss";
 
 export default function Footer() {
   const currentDate = new Date();

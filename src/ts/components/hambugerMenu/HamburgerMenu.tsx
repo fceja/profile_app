@@ -1,8 +1,7 @@
-import "../../../styles/components/hamburgerMenu/HamburgerMenu.scss";
-
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
+import "../../../styles/components/hamburgerMenu/HamburgerMenu.scss";
 import ScrollToTop from "ts/scripts/ScrollToTop";
 
 const HamburgerMenu = () => {

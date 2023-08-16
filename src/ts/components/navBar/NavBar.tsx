@@ -1,7 +1,6 @@
-import "../../../styles/components/navBar/NavBar.scss";
-
 import React from "react";
 
+import "../../../styles/components/navBar/NavBar.scss";
 import HamburgerMenu from "../hambugerMenu/HamburgerMenu";
 import TelNumber from "../telNumber/TelNumber";
 

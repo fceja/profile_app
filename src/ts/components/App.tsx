@@ -1,8 +1,7 @@
-import "../../styles/App.scss"
-
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 
+import "../../styles/App.scss"
 import ContactContainer from "ts/pages/contact/ContactContainer";
 import HomeContainer from "ts/pages/home/HomeContainer";
 import LayoutContainer from "ts/pages/LayoutContainer";

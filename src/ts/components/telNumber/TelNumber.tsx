@@ -1,6 +1,6 @@
-import "../../../styles/components/telNumber/TelNumber.scss"
-
 import React from "react";
+
+import "../../../styles/components/telNumber/TelNumber.scss"
 
 function handleClick() {
     window.location.href= "tel:123-123-1234";

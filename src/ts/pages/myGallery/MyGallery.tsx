@@ -1,7 +1,6 @@
-import "../../../styles/pages/imageGallery/ImageGallery.scss";
-
 import React, { useEffect } from "react";
 
+import "../../../styles/pages/imageGallery/ImageGallery.scss";
 import { AppState } from "ts/redux/Types";
 import { connect } from "react-redux";
 import ElementObserver from "ts/redux/utils/ElementObserver";

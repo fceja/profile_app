@@ -1,7 +1,6 @@
-import "../../styles/pages/Layout.scss"
-
 import React from "react";
 
+import "../../styles/pages/Layout.scss"
 import Logo from "../components/logo/Logo";
 import { PAGE_PATHS } from "ts/common/Contants";
 import NavBar from "../components/navBar/NavBar";
