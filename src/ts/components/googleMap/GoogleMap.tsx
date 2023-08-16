@@ -1,14 +1,10 @@
-// import React, { ReactElement } from "react";
 import React from "react";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
+import "../../../styles/components/googleMap/GoogleMap.scss"
 import MyMapComponent from "./MyMapComponent";
 
 // return loading or failure div
-// const render = (status: Status): ReactElement => {
-//   if (status === Status.FAILURE) return <div>This is error div</div>;
-//   return <div>this is Loading... div</div>;
-// };
 const render = (status: Status): React.ReactElement => {
   if (status === Status.FAILURE) return <div>This is error div</div>;
   return <div>this is Loading... div</div>;
@@ -41,11 +37,13 @@ const combinedStyles = { ...styles, ...conditionalStyles };
 
 const GoogleMap = () => {
   return !mapDebug ? (
-    <Wrapper apiKey={apiKey} render={render}>
-      <MyMapComponent center={center} zoom={zoom} styles={styles} />
-    </Wrapper>
+    <div className="map-container">
+      <Wrapper apiKey={apiKey} render={render}>
+        <MyMapComponent center={center} zoom={zoom} styles={styles} />
+      </Wrapper>
+    </div>
   ) : (
-    <div style={combinedStyles}>DEBUG is true</div>
+    <div className="map-container" style={combinedStyles}>DEBUG is true</div>
   );
 };
 
