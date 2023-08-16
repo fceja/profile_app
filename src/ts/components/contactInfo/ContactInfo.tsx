@@ -9,16 +9,16 @@ import ContactInfoSocial from "../contactInfoSocial/ContactInfoSocial";
 export default function ContactInfo() {
   return (
     <div className="contact-info">
-      <section className="sec-1">
+      <section>
         <ContactInfoPhone />
       </section>
-      <section className="sec-2">
+      <section>
         <ContactInfoEmail />
       </section>
-      <section className="sec-3">
+      <section>
         <ContactInfoSocial />
       </section>
-      <section className="sec-4">
+      <section>
         <ContactInfoMap />
       </section>
     </div>
