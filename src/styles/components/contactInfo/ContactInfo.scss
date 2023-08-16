@@ -1,41 +1,9 @@
 @import "../../Variables";
 
-circle {
-  fill: #a7adc6;
-}
-
 section {
   margin: 20px 0 20px 0;
 }
 
 .contact-info {
   margin: 10px;
-}
-
-.contact-info-social-items {
-  display: flex;
-  justify-content: center;
-
-  svg {
-    margin: 0 10px 0 10px;
-  }
-}
-
-.icon-circle-container {
-  position: relative;
-}
-
-#map {
-  border-radius: 15px;
-}
-
-.map-container {
-  margin: 10px 5px 5px 5px;
-}
-
-.svg-icon {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
 }

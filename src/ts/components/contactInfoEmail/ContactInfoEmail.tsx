@@ -1,11 +1,13 @@
 import React from "react";
 
+import "../../../styles/components/contactInfoEmail/ContactInfoEmail.scss";
+
 const ContactInfoEmail = () => {
   return (
     <>
-      <div className="icon-circle-container">
+      <div className="contact-info-em-container">
         <svg
-          className="svg-icon"
+          className="contact-info-em-svg-icon"
           xmlns="http://www.w3.org/2000/svg"
           height="1em"
           viewBox="0 0 512 512"

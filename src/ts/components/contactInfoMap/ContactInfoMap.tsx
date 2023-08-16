@@ -1,13 +1,14 @@
 import React from "react";
 
+import "../../../styles/components/contactInfoMap/ContactInfoMap.scss"
 import GoogleMap from "../googleMap/GoogleMap";
 
 const ContactInfoMap = () => {
   return (
     <>
-      <div className="icon-circle-container">
+      <div className="contact-info-map-container">
         <svg
-          className="svg-icon"
+          className="contact-info-map-svg-icon"
           xmlns="http://www.w3.org/2000/svg"
           height="1em"
           viewBox="0 0 576 512"
