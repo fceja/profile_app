@@ -1,4 +1,4 @@
-import "../../../../styles/components/telNumber/TelNumber.scss"
+import "../../../styles/components/telNumber/TelNumber.scss"
 
 import React from "react";
 
