@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import "../../../styles/pages/imageGallery/ImageGallery.scss";
-import { AppState } from "ts/redux/Types";
+import { AppState } from "ts/redux/types/Types";
 import { connect } from "react-redux";
 import ElementObserver from "ts/redux/utils/ElementObserver";
 import ImageGallery from "react-image-gallery";
