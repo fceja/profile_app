@@ -1,5 +1,5 @@
 export const UPDATE_FORM_ERROR_STATE = "UPDATE_FORM_ERROR_STATE";
-export const UPDATE_FORM_HAS_ERROR = "UPDATE_FORM_HAS_ERROR";
+export const UPDATE_FORM_IS_VALID = "UPDATE_FORM_IS_VALID";
 
 export type UpdateFormErrorState = {
   type: typeof UPDATE_FORM_ERROR_STATE;
@@ -7,9 +7,9 @@ export type UpdateFormErrorState = {
   errorState: boolean;
 };
 
-export type UpdateFormHasError = {
-  type: typeof UPDATE_FORM_HAS_ERROR;
-  formHasError: boolean;
+export type UpdateFormIsValid = {
+  type: typeof UPDATE_FORM_IS_VALID;
+  formIsValid: boolean;
 };
 
-export type ContactActionTypes = UpdateFormErrorState | UpdateFormHasError;
+export type ContactActionTypes = UpdateFormErrorState | UpdateFormIsValid;

@@ -7,7 +7,7 @@ export interface InitialState {
     email: boolean;
     message: boolean;
   };
-  formHasError: boolean;
+  formIsValid: boolean;
 }
 
 const initialState: InitialState = {
@@ -17,7 +17,7 @@ const initialState: InitialState = {
     email: true,
     message: true,
   },
-  formHasError: true,
+  formIsValid: true,
 };
 
 const contactReducer = (
@@ -33,10 +33,10 @@ const contactReducer = (
           [action.name]: action.errorState,
         },
       };
-    case ContactActionTypes.UPDATE_FORM_HAS_ERROR:
+    case ContactActionTypes.UPDATE_FORM_IS_VALID:
       return {
         ...state,
-        formHasError: action.formHasError,
+        formIsValid: action.formIsValid,
       };
     default:
       return state;

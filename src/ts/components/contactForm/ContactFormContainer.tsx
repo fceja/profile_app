@@ -4,7 +4,7 @@ import { Dispatch } from "redux";
 import ContactForm from "./ContactForm";
 import {
   UpdateFormErrorState,
-  UpdateFormHasError,
+  UpdateFormIsValid,
 } from "ts/redux/actions/ContactActions";
 
 const mapStateToProps = () => {
@@ -14,8 +14,8 @@ const mapStateToProps = () => {
 const mapDispatchToProps = (dispatch: Dispatch) => ({
   updateFormErrorState: (name: string, errorState: boolean) =>
     dispatch(UpdateFormErrorState(name, errorState)),
-  updateFormHasError: (forHasError: boolean) =>
-    dispatch(UpdateFormHasError(forHasError)),
+  updateFormIsValid: (formIsValid: boolean) =>
+    dispatch(UpdateFormIsValid(formIsValid)),
 });
 
 const ContactFormContainer = connect(

@@ -9,9 +9,9 @@ export const UpdateFormErrorState = (
   errorState: errorState,
 });
 
-export const UpdateFormHasError = (
-  formHasError: boolean
-): ContactActionTypes.UpdateFormHasError => ({
-  type: ContactActionTypes.UPDATE_FORM_HAS_ERROR,
-  formHasError: formHasError,
+export const UpdateFormIsValid = (
+  formIsValid: boolean
+): ContactActionTypes.UpdateFormIsValid => ({
+  type: ContactActionTypes.UPDATE_FORM_IS_VALID,
+  formIsValid: formIsValid,
 });
