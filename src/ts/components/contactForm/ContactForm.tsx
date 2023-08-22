@@ -44,7 +44,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
     } else {
       updateFormHasError(false);
     }
-  }
+  };
 
   const handleInputChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

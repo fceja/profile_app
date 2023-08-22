@@ -1,6 +1,16 @@
-import * as ContactTypes from "../types/ContactTypes";
+import * as ContactActionTypes from "../types/ContactActionTypes";
 
-const initialState: ContactTypes.InitialStateType = {
+export interface InitialState {
+  formErrorMessage: string;
+  formErrorStates: {
+    name: boolean;
+    email: boolean;
+    message: boolean;
+  };
+  formHasError: boolean;
+}
+
+const initialState: InitialState = {
   formErrorMessage: " - Required",
   formErrorStates: {
     name: true,
@@ -12,10 +22,10 @@ const initialState: ContactTypes.InitialStateType = {
 
 const contactReducer = (
   state = initialState,
-  action: ContactTypes.ContactActionTypes
+  action: ContactActionTypes.ContactActionTypes
 ) => {
   switch (action.type) {
-    case ContactTypes.UPDATE_FORM_ERROR_STATE:
+    case ContactActionTypes.UPDATE_FORM_ERROR_STATE:
       return {
         ...state,
         formErrorStates: {
@@ -23,7 +33,7 @@ const contactReducer = (
           [action.name]: action.errorState,
         },
       };
-    case ContactTypes.UPDATE_FORM_HAS_ERROR:
+    case ContactActionTypes.UPDATE_FORM_HAS_ERROR:
       return {
         ...state,
         formHasError: action.formHasError,
