@@ -1,29 +1,21 @@
-import { UPDATE_FORM_ERROR_STATE, ContactAction } from "../types/ContactTypes";
+import * as ContactTypes from "../types/ContactTypes";
 
-interface ContactState {
-  formErrorMessages: {
-    name: string;
-  };
-  formErrorStates: {
-    name: boolean;
-  };
-}
-
-const initialState: ContactState = {
-  formErrorMessages: {
-    name: "Name Required",
-  },
+const initialState: ContactTypes.InitialStateType = {
+  formErrorMessage: " - Required",
   formErrorStates: {
     name: true,
+    email: true,
+    message: true,
   },
+  formHasError: true,
 };
 
 const contactReducer = (
   state = initialState,
-  action: ContactAction
-): ContactState => {
+  action: ContactTypes.ContactActionTypes
+) => {
   switch (action.type) {
-    case UPDATE_FORM_ERROR_STATE:
+    case ContactTypes.UPDATE_FORM_ERROR_STATE:
       return {
         ...state,
         formErrorStates: {
@@ -31,7 +23,11 @@ const contactReducer = (
           [action.name]: action.errorState,
         },
       };
-
+    case ContactTypes.UPDATE_FORM_HAS_ERROR:
+      return {
+        ...state,
+        formHasError: action.formHasError,
+      };
     default:
       return state;
   }

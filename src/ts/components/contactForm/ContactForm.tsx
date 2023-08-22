@@ -1,37 +1,78 @@
-import React, { ChangeEvent, FormEvent } from "react";
+import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 import { RootState } from "ts/redux/ConfigureStore";
 
 interface ContactFormProps {
   updateFormErrorState: (name: string, errorState: boolean) => void;
+  updateFormHasError: (formHasError: boolean) => void;
 }
 
-const ContactForm: React.FC<ContactFormProps> = ({ updateFormErrorState }) => {
+const ContactForm: React.FC<ContactFormProps> = ({
+  updateFormErrorState,
+  updateFormHasError,
+}) => {
   const contactState = useSelector((state: RootState) => state.contactState);
   console.log("*************************************");
   console.log("initial render ContactForm 1", contactState);
 
-  const handleFormErrorUpdate = () => {
-    updateFormErrorState("name", false);
-  };
+  const [isFormSubmitted, setFormSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  useEffect(() => {
+    updateFormState();
+  }, [formData]);
+
+  useEffect(() => {
+    isFormError();
+  }, [contactState.formErrorStates]);
+
+  const isFormError = () => {
+    const hasError = Object.keys(contactState.formErrorStates).some(
+      (key) =>
+        contactState.formErrorStates[
+          key as keyof typeof contactState.formErrorStates
+        ] === true
+    );
+
+    if (hasError) {
+      updateFormHasError(true);
+    } else {
+      updateFormHasError(false);
+    }
+  }
 
   const handleInputChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = event.target;
-
-    console.log("name", name);
-    console.log("value", value);
-
-    if (name === "name") {
-    } else if (name === "email") {
-    }
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    handleFormErrorUpdate();
+    setFormSubmitted(true);
+
+    if (contactState.formHasError) {
+      console.log("Submission NOT successful");
+    } else {
+      console.log("Submission successful");
+    }
+  };
+
+  const updateFormState = () => {
+    Object.keys(formData).forEach((key) => {
+      let val = formData[key as keyof typeof formData];
+      if (val === "") {
+        updateFormErrorState(key, true);
+      } else {
+        updateFormErrorState(key, false);
+      }
+    });
   };
 
   return (
@@ -40,20 +81,21 @@ const ContactForm: React.FC<ContactFormProps> = ({ updateFormErrorState }) => {
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-row-input">
           <div className="div-label">
-            <label className="contact-form-label">Name:</label>
+            <label className="contact-form-label">Name</label>
+            {isFormSubmitted && contactState.formErrorStates.name && (
+              <label className="contact-form-label">
+                {contactState.formErrorMessage}
+              </label>
+            )}
           </div>
           <div className="div-input">
             <input
               className="contact-form-input"
               type="text"
               name="name"
-              // value={formData.name}
+              value={formData.name}
               onChange={handleInputChange}
             />
-            {/* {isFormSubmitted && isFormNameError && ( */}
-            {/* {isFormNameError && (
-              <span className="error-name">{formNameErrorMessage}</span>
-            )} */}
           </div>
         </div>
         <div className="form-row-btn">
@@ -65,12 +107,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ updateFormErrorState }) => {
 };
 
 export default ContactForm;
-
-
-
-
-
-
 
 //   return (
 //     <div className="contact-form-container">
