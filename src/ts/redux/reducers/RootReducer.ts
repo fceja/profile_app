@@ -1,9 +1,11 @@
 import { combineReducers } from "@reduxjs/toolkit";
 
 import contactReducer from "./ContactReducer";
-import { imageVisibilityReducer } from "./ImageVisibilityReducer";
+import myGalleryReducer from "./MyGalleryReducer";
 
-export const rootReducer = combineReducers({
-  imageVisibilityReducer,
+const rootReducer = combineReducers({
+  myGalleryState: myGalleryReducer,
   contactState: contactReducer,
 });
+
+export default rootReducer;

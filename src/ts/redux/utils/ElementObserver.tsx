@@ -1,24 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import { observeElementVisibility } from './ObserveImageElement';
-import { setElementVisibility } from '../actions/ImageVisibilityActions';
-import { useDispatch } from 'react-redux';
+import { observeElementVisibility } from "./ObserveImageElement";
+import { updateElementVisibility } from "../actions/MyGalleryActions";
+import { useDispatch } from "react-redux";
 
 interface ElementObserverProps {
-    elemToObserve: string;
-  }
+  elemToObserve: string;
+}
 
-const ElementObserver: React.FC<ElementObserverProps> = ({elemToObserve}) => {
-    const dispatch = useDispatch();
+const ElementObserver: React.FC<ElementObserverProps> = ({ elemToObserve }) => {
+  const dispatch = useDispatch();
 
-    useEffect(() => {
-        observeElementVisibility(elemToObserve , isVisible => {
-            dispatch(setElementVisibility(isVisible));
-        });
-    }, [dispatch]);
+  useEffect(() => {
+    observeElementVisibility(elemToObserve, (isVisible) => {
+      dispatch(updateElementVisibility(isVisible));
+    });
+  }, [dispatch]);
 
-    return null
-
+  return null;
 };
 
 export default ElementObserver;

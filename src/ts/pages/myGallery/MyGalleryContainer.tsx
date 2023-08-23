@@ -1,9 +1,22 @@
-import { connect } from "react-redux"
+import { connect } from "react-redux";
+import { Dispatch } from "redux";
 
 import MyGallery from "./MyGallery";
+import { updateElementVisibility } from "ts/redux/actions/MyGalleryActions";
 
+const mapStateToProps = () => {
+  return {};
+};
 
-const MyGalleryContainer = connect()(MyGallery)
+const mapDispatchToProps = (dispatch: Dispatch) => ({
+  updateElementVisibility: (payload: boolean) =>
+    dispatch(updateElementVisibility(payload)),
+});
+
+const MyGalleryContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(MyGallery);
 MyGalleryContainer.displayName = "MyGalleryContainer";
 
-export default MyGalleryContainer
+export default MyGalleryContainer;

@@ -1,6 +1,6 @@
 import * as ContactActionTypes from "../types/ContactActionTypes";
 
-export interface InitialState {
+interface InitialState {
   formErrorMessage: string;
   formInputStates: {
     nameIsValid: boolean;

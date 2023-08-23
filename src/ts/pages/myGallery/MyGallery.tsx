@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 
 import "../../../styles/pages/imageGallery/ImageGallery.scss";
-import { AppState } from "ts/redux/types/Types";
-import { connect } from "react-redux";
 import ElementObserver from "ts/redux/utils/ElementObserver";
 import ImageGallery from "react-image-gallery";
-interface MyGalleryProps {
-  isElementVisible: boolean;
-}
+import { RootState } from "ts/redux/ConfigureStore";
 
 const images = [
   {
@@ -26,23 +23,27 @@ const images = [
 
 const elemToObserveStr = ".image-gallery-slides";
 
-const MyGallery: React.FC<MyGalleryProps> = ({ isElementVisible }) => {
+const MyGallery: React.FC = () => {
+  const myGalleryState = useSelector(
+    (state: RootState) => state.myGalleryState
+  );
+
   useEffect(() => {
     const swipeDiv = document.querySelector(".image-gallery-swipe");
 
     if (swipeDiv) {
       const loadingDiv = swipeDiv.querySelector(".loading-div");
 
-      if (!isElementVisible && !loadingDiv) {
+      if (!myGalleryState.isElementVisible && !loadingDiv) {
         const newLoadingDiv = document.createElement("div");
         newLoadingDiv.className = "loading-div";
         newLoadingDiv.textContent = "Loading...";
         swipeDiv.appendChild(newLoadingDiv);
-      } else if (isElementVisible && loadingDiv) {
+      } else if (myGalleryState.isElementVisible && loadingDiv) {
         swipeDiv.removeChild(loadingDiv);
       }
     }
-  }, [isElementVisible]);
+  }, [myGalleryState.isElementVisible]);
 
   return (
     <section className="app-react-image-gallery">
@@ -52,8 +53,4 @@ const MyGallery: React.FC<MyGalleryProps> = ({ isElementVisible }) => {
   );
 };
 
-const mapStateToProps = (state: AppState) => ({
-  isElementVisible: state.isElementVisible,
-});
-
-export default connect(mapStateToProps)(MyGallery);
+export default MyGallery;
