@@ -1,12 +1,12 @@
 import * as ContactActionTypes from "../types/ContactActionTypes";
 
-export const UpdateFormErrorState = (
+export const updateFormInputState = (
   name: string,
-  errorState: boolean
-): ContactActionTypes.UpdateFormErrorState => ({
-  type: ContactActionTypes.UPDATE_FORM_ERROR_STATE,
+  isValid: boolean
+): ContactActionTypes.UpdateFormInputState => ({
+  type: ContactActionTypes.UPDATE_FORM_INPUT_STATE,
   name: name,
-  errorState: errorState,
+  isValid: isValid,
 });
 
 export const UpdateFormIsValid = (

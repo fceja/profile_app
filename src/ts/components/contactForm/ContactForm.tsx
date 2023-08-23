@@ -4,12 +4,12 @@ import { useSelector } from "react-redux";
 import { RootState } from "ts/redux/ConfigureStore";
 
 interface ContactFormProps {
-  updateFormErrorState: (name: string, errorState: boolean) => void;
+  updateFormInputState: (name: string, isEmpty: boolean) => void;
   updateFormIsValid: (formIsValid: boolean) => void;
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({
-  updateFormErrorState,
+  updateFormInputState,
   updateFormIsValid,
 }) => {
   const contactState = useSelector((state: RootState) => state.contactState);
@@ -24,25 +24,18 @@ const ContactForm: React.FC<ContactFormProps> = ({
   });
 
   useEffect(() => {
-    updateFormState();
-  }, [formData]);
-
-  useEffect(() => {
     isFormValid();
-  }, [contactState.formErrorStates]);
+  }, [contactState.formInputStates]);
 
   const isFormValid = () => {
-    const hasError = Object.keys(contactState.formErrorStates).some(
-      (key) =>
-        contactState.formErrorStates[
-          key as keyof typeof contactState.formErrorStates
-        ] === true
+    const allValid = Object.values(contactState.formInputStates).every(
+      (isValid) => isValid === true
     );
 
-    if (hasError) {
-      updateFormIsValid(false);
-    } else {
+    if (allValid) {
       updateFormIsValid(true);
+    } else if (contactState.formIsValid !== false) {
+      updateFormIsValid(false);
     }
   };
 
@@ -51,6 +44,15 @@ const ContactForm: React.FC<ContactFormProps> = ({
   ) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
+    updateFormState(name, value);
+  };
+
+  const updateFormState = (name: string, value: string) => {
+    if (value === "") {
+      updateFormInputState(name, false);
+    } else {
+      updateFormInputState(name, true);
+    }
   };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -58,21 +60,11 @@ const ContactForm: React.FC<ContactFormProps> = ({
     setFormSubmitted(true);
 
     if (contactState.formIsValid) {
-      console.log("Submission NOT successful");
-    } else {
       console.log("Submission successful");
+      // TODO - ping endpoint
+    } else {
+      console.log("Submission NOT successful");
     }
-  };
-
-  const updateFormState = () => {
-    Object.keys(formData).forEach((key) => {
-      let val = formData[key as keyof typeof formData];
-      if (val === "") {
-        updateFormErrorState(key, true);
-      } else {
-        updateFormErrorState(key, false);
-      }
-    });
   };
 
   return (
@@ -98,11 +90,12 @@ const ContactForm: React.FC<ContactFormProps> = ({
             />
           </div>
         </div>
-        <div className="form-row-input">
+        {/* <div className="form-row-input">
           <div className="div-label">
             <label className="contact-form-label">Email</label>
-            {isFormSubmitted && contactState.formErrorStates.email && (
-              <label className="contact-form-label">
+            {isFormSubmitted && !contactState.formInputStates.emailIsValid && (
+              // <label className="contact-form-label">
+              <label className="contact-form-label-error">
                 {contactState.formErrorMessage}
               </label>
             )}
@@ -116,15 +109,16 @@ const ContactForm: React.FC<ContactFormProps> = ({
               onChange={handleInputChange}
             />
           </div>
-        </div>
-        <div className="form-row-textarea">
+        </div> */}
+        {/* <div className="form-row-textarea">
           <div className="div-label">
             <label className="contact-form-label">Message:</label>
-            {isFormSubmitted && contactState.formErrorStates.message && (
-              <label className="contact-form-label">
-                {contactState.formErrorMessage}
-              </label>
-            )}
+            {isFormSubmitted &&
+              !contactState.formInputStates.messageIsValid && (
+                <label className="contact-form-label-error">
+                  {contactState.formErrorMessage}
+                </label>
+              )}
           </div>
           <div className="div-input">
             <textarea
@@ -134,7 +128,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
               onChange={handleInputChange}
             />
           </div>
-        </div>
+        </div> */}
         <div className="form-row-btn">
           <button type="submit">Submit</button>
         </div>

@@ -2,22 +2,22 @@ import * as ContactActionTypes from "../types/ContactActionTypes";
 
 export interface InitialState {
   formErrorMessage: string;
-  formErrorStates: {
-    name: boolean;
-    email: boolean;
-    message: boolean;
+  formInputStates: {
+    nameIsValid: boolean;
+    emailIsValid: boolean;
+    messageIsValid: boolean;
   };
   formIsValid: boolean;
 }
 
 const initialState: InitialState = {
   formErrorMessage: " - Required",
-  formErrorStates: {
-    name: true,
-    email: true,
-    message: true,
+  formInputStates: {
+    nameIsValid: false,
+    emailIsValid: false,
+    messageIsValid: false,
   },
-  formIsValid: true,
+  formIsValid: false,
 };
 
 const contactReducer = (
@@ -25,12 +25,12 @@ const contactReducer = (
   action: ContactActionTypes.ContactActionTypes
 ) => {
   switch (action.type) {
-    case ContactActionTypes.UPDATE_FORM_ERROR_STATE:
+    case ContactActionTypes.UPDATE_FORM_INPUT_STATE:
       return {
         ...state,
-        formErrorStates: {
-          ...state.formErrorStates,
-          [action.name]: action.errorState,
+        formInputStates: {
+          ...state.formInputStates,
+          [`${action.name}IsValid`]: action.isValid,
         },
       };
     case ContactActionTypes.UPDATE_FORM_IS_VALID:

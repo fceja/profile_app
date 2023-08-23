@@ -1,10 +1,10 @@
-export const UPDATE_FORM_ERROR_STATE = "UPDATE_FORM_ERROR_STATE";
+export const UPDATE_FORM_INPUT_STATE = "UPDATE_FORM_INPUT_STATE";
 export const UPDATE_FORM_IS_VALID = "UPDATE_FORM_IS_VALID";
 
-export type UpdateFormErrorState = {
-  type: typeof UPDATE_FORM_ERROR_STATE;
+export type UpdateFormInputState = {
+  type: typeof UPDATE_FORM_INPUT_STATE;
   name: string;
-  errorState: boolean;
+  isValid: boolean;
 };
 
 export type UpdateFormIsValid = {
@@ -12,4 +12,4 @@ export type UpdateFormIsValid = {
   formIsValid: boolean;
 };
 
-export type ContactActionTypes = UpdateFormErrorState | UpdateFormIsValid;
+export type ContactActionTypes = UpdateFormInputState | UpdateFormIsValid;
