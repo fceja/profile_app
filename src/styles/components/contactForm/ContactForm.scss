@@ -1,3 +1,5 @@
+@import "~/src/styles/Breakpoints";
+
 div.contact-form-container {
   align-items: center;
   border-style: dashed;
@@ -65,8 +67,27 @@ textarea {
   width: 82%;
   max-width: 82%;
   min-width: 82%;
-  max-height: 100%;
-  min-height: 100%;
+}
+
+@include media-query((xs-device, sm-device)) {
+  textarea {
+    min-height: 100px;
+    max-height: 200px;
+  }
+}
+
+@include media-query(md-device) {
+  textarea {
+    min-height: 150px;
+    max-height: 200px;
+  }
+}
+
+@include media-query((lg-device, xl-device)) {
+  textarea {
+    min-height: 150px;
+    max-height: 250px;
+  }
 }
 
 .contact-form-label,
