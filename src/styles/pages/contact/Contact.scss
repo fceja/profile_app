@@ -10,3 +10,9 @@
   justify-content: center;
   margin: $default-container-margin-top-bottom;
 }
+
+@include media-query((xs-device, sm-device)) {
+  .contact-info-form-container {
+    flex-direction: column;
+  }
+}

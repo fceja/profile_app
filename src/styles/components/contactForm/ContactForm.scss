@@ -17,7 +17,6 @@ div.form-title {
   justify-content: center;
   align-items: center;
   border-style: dashed;
-  border-color: purple;
   height: 10%;
   width: 100%;
   box-sizing: border-box;
@@ -26,8 +25,7 @@ div.form-title {
 form.contact-form {
   position: relative;
   box-sizing: border-box;
-  border-style: dashed;
-  border-color: green;
+  margin-top: 30px;
   width: 100%;
   height: 90%;
   overflow: hidden;
@@ -38,8 +36,6 @@ div.form-row-btn {
   display: flex;
   justify-content: center;
   width: 100%;
-  border-style: dotted;
-  border-color: aquamarine;
   max-height: 10%;
   margin: 10px 0 10px 0;
 
@@ -52,8 +48,6 @@ div.div-input {
   display: flex;
   justify-content: center;
   width: 100%;
-  border-style: dotted;
-  border-color: bisque;
 }
 
 input {
@@ -73,6 +67,10 @@ textarea {
   textarea {
     min-height: 100px;
     max-height: 200px;
+  }
+
+  div.contact-form-container {
+    width: 90%;
   }
 }
 
