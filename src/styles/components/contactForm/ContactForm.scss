@@ -95,14 +95,28 @@ textarea {
 
 @include media-query(md-device) {
   textarea {
-    min-height: 200px;
-    max-height: 200px;
+    @media (orientation: landscape) {
+      min-height: 100px;
+      max-height: 100px;
+
+    }
+    @media (orientation: portrait) {
+      min-height: 200px;
+      max-height: 200px;
+    }
   }
 }
 
 @include media-query((lg-device, xl-device)) {
   textarea {
-    min-height: 250px;
-    max-height: 250px;
+    @media (orientation: landscape) {
+      min-height: 100px;
+      max-height: 100px;
+
+    }
+    @media (orientation: portrait) {
+      min-height: 200px;
+      max-height: 200px;
+    }
   }
 }
