@@ -10,10 +10,10 @@ section {
 }
 
 div.contact-info {
-  border-style: dashed;
-  border-color: blue;
+  background-color: #d9dcd6;
   text-align: center;
   width: 50%;
+  padding: 10px;
 }
 
 @include media-query((xs-device, sm-device)) {

@@ -2,33 +2,41 @@
 
 div.contact-form-container {
   align-items: center;
-  border-style: dashed;
-  border-color: orange;
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 50vh;
   position: relative;
   box-sizing: border-box;
+  margin: 10px;
 }
 
 div.form-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: dashed;
   height: 10%;
   width: 100%;
   box-sizing: border-box;
+  background-color: #16425b;
+  color: white;
 }
 
 form.contact-form {
   position: relative;
   box-sizing: border-box;
-  margin-top: 30px;
+  padding-top: 30px;
   width: 100%;
   height: 90%;
   overflow: hidden;
+  background-color: #81c3d7;
+}
+
+form {
+  div {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
 }
 
 div.form-row-btn {
@@ -41,6 +49,7 @@ div.form-row-btn {
 
   button {
     width: 50%;
+    height: 60px;
   }
 }
 
@@ -63,10 +72,20 @@ textarea {
   min-width: 82%;
 }
 
+.contact-form-label,
+.contact-form-label-error {
+  position: relative;
+  left: 10%;
+}
+
+.contact-form-label-error {
+  color: red;
+}
+
 @include media-query((xs-device, sm-device)) {
   textarea {
-    min-height: 100px;
-    max-height: 200px;
+    min-height: 80px;
+    max-height: 80px;
   }
 
   div.contact-form-container {
@@ -76,24 +95,14 @@ textarea {
 
 @include media-query(md-device) {
   textarea {
-    min-height: 150px;
+    min-height: 200px;
     max-height: 200px;
   }
 }
 
 @include media-query((lg-device, xl-device)) {
   textarea {
-    min-height: 150px;
+    min-height: 250px;
     max-height: 250px;
   }
-}
-
-.contact-form-label,
-.contact-form-label-error {
-  position: relative;
-  left: 10%;
-}
-
-.contact-form-label-error {
-  color: red;
 }
