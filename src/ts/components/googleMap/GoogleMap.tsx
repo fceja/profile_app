@@ -1,7 +1,6 @@
 import React from "react";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
-import "styles/components/googleMap/GoogleMap.scss"
 import MyMapComponent from "./MyMapComponent";
 
 // return loading or failure div
@@ -43,7 +42,9 @@ const GoogleMap = () => {
       </Wrapper>
     </div>
   ) : (
-    <div className="map-container" style={combinedStyles}>DEBUG is true</div>
+    <div className="map-container" style={combinedStyles}>
+      DEBUG is true
+    </div>
   );
 };
 
