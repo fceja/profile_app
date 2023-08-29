@@ -1,7 +1,7 @@
 import { combineReducers } from "@reduxjs/toolkit";
 
-import contactReducer from "./ContactReducer";
-import myGalleryReducer from "./MyGalleryReducer";
+import contactReducer from "./pages/contact/ContactReducer";
+import myGalleryReducer from "./pages/myGallery/MyGalleryReducer";
 
 const rootReducer = combineReducers({
   myGalleryState: myGalleryReducer,

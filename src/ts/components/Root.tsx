@@ -3,7 +3,7 @@ import React from "react";
 import { Provider } from "react-redux";
 
 import App from "./App";
-import Store from "ts/store/ConfigureStore";
+import Store from "ts/ConfigureStore";
 
 const Root = () => {
   return (

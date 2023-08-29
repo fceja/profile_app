@@ -1,4 +1,4 @@
-import * as MyGalleryActionTypes from "ts/store/types/MyGalleryActionTypes";
+import * as MyGalleryActionTypes from "ts/pages/myGallery/MyGalleryActionTypes";
 
 export const updateElementVisibility = (
   isVisible: boolean

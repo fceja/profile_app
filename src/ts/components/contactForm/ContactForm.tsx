@@ -2,7 +2,7 @@ import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 import "styles/components/contactForm/ContactForm.scss";
-import { RootState } from "ts/store/ConfigureStore";
+import { RootState } from "ts/ConfigureStore";
 
 interface ContactFormProps {
   updateFormInputState: (name: string, isEmpty: boolean) => void;
