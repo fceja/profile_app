@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { Dispatch } from "redux";
 
 import MyGallery from "./MyGallery";
-import { updateElementVisibility } from "ts/redux/actions/MyGalleryActions";
+import { updateElementVisibility } from "ts/store/actions/MyGalleryActions";
 
 const mapStateToProps = () => {
   return {};

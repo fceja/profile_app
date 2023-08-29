@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 import "../../../styles/pages/imageGallery/ImageGallery.scss";
-import ElementObserver from "ts/redux/utils/ElementObserver";
+import ElementObserver from "ts/store/utils/ElementObserver";
 import ImageGallery from "react-image-gallery";
-import { RootState } from "ts/redux/ConfigureStore";
+import { RootState } from "ts/store/ConfigureStore";
 
 const images = [
   {

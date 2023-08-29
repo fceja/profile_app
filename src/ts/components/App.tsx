@@ -18,7 +18,7 @@ const App = () => {
     <>
       <Suspense fallback={<h1>Loading...</h1>}>
         <Routes>
-          <Route path="/" element={<Navigate to={PAGE_PATHS.HOME} />} />
+          <Route path="/*" element={<Navigate to={PAGE_PATHS.HOME} />} />
           <Route
             path={PAGE_PATHS.HOME}
             element={

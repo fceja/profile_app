@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 import {
   updateFormInputState,
   UpdateFormIsValid,
-} from "ts/redux/actions/ContactActions";
+} from "ts/store/actions/ContactActions";
 
 const mapStateToProps = () => {
   return {};
