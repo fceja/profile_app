@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../../styles/components/contactInfoSocial/ContactInfoSocial.scss"
+import "styles/components/contactInfoSocial/ContactInfoSocial.scss"
 
 const ContactInfoSocial = () => {
   return (

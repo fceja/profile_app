@@ -1,4 +1,4 @@
-import * as MyGalleryActionTypes from "../types/MyGalleryActionTypes";
+import * as MyGalleryActionTypes from "ts/store/types/MyGalleryActionTypes";
 
 interface InitialSate {
   isElementVisible: boolean;

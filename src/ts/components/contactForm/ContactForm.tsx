@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
-import "../../../styles/components/contactForm/ContactForm.scss";
+import "styles/components/contactForm/ContactForm.scss";
 import { RootState } from "ts/store/ConfigureStore";
 
 interface ContactFormProps {
@@ -14,8 +14,6 @@ const ContactForm: React.FC<ContactFormProps> = ({
   updateFormIsValid,
 }) => {
   const contactState = useSelector((state: RootState) => state.contactState);
-  console.log("*************************************");
-  console.log("initial render", contactState);
 
   const [isFormSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({

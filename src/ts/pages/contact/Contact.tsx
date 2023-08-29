@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../../styles/pages/contact/Contact.scss";
+import "styles/pages/contact/Contact.scss";
 import ContactInfo from "ts/components/contactInfo/ContactInfo";
 import ContactFormContainer from "ts/components/contactForm/ContactFormContainer";
 

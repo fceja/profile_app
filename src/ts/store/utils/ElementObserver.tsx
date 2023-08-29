@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import { observeElementVisibility } from "./ObserveImageElement";
-import { updateElementVisibility } from "../actions/MyGalleryActions";
+import { updateElementVisibility } from "ts/store/actions/MyGalleryActions";
 import { useDispatch } from "react-redux";
 
 interface ElementObserverProps {

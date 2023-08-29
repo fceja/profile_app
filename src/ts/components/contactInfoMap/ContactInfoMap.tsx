@@ -1,7 +1,7 @@
 import React from "react";
 
-import "../../../styles/components/contactInfoMap/ContactInfoMap.scss"
-import GoogleMap from "../googleMap/GoogleMap";
+import "styles/components/contactInfoMap/ContactInfoMap.scss"
+import GoogleMap from "ts/components/googleMap/GoogleMap";
 
 const ContactInfoMap = () => {
   return (
