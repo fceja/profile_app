@@ -1,3 +1,5 @@
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
@@ -67,71 +69,56 @@ const ContactForm: React.FC<ContactFormProps> = ({
   };
 
   return (
-    <div className="contact-form-container">
-      <div className="form-title">Send us a message</div>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="form-row-input-name">
-          <div className="div-labels-name">
-            <label className="contact-form-label">Name</label>
-            {isFormSubmitted && !contactState.formInputStates.nameIsValid && (
-              <label className="contact-form-label-error">
-                {contactState.formErrorMessage}
-              </label>
-            )}
-          </div>
-          <div className="div-input">
-            <input
-              className="contact-form-input"
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-            />
-          </div>
-        </div>
-        <div className="form-row-input">
-          <div className="div-label-email">
-            <label className="contact-form-label">Email</label>
-            {isFormSubmitted && !contactState.formInputStates.emailIsValid && (
-              <label className="contact-form-label-error">
-                {contactState.formErrorMessage}
-              </label>
-            )}
-          </div>
-          <div className="div-input">
-            <input
-              className="contact-form-input"
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-            />
-          </div>
-        </div>
-        <div className="form-row-textarea">
-          <div className="div-label-message">
-            <label className="contact-form-label">Message:</label>
-            {isFormSubmitted &&
-              !contactState.formInputStates.messageIsValid && (
-                <label className="contact-form-label-error">
-                  {contactState.formErrorMessage}
-                </label>
-              )}
-          </div>
-          <div className="div-input">
-            <textarea
-              className="contact-form-input"
-              name="message"
-              value={formData.message}
-              onChange={handleInputChange}
-            />
-          </div>
-        </div>
-        <div className="form-row-btn">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
+    <Form onSubmit={handleSubmit}>
+      <Form.Label className="sendMessageTitle">Send us a message</Form.Label>
+      <Form.Group className="formName m-3" controlId="formName">
+        <Form.Label>Name</Form.Label>
+        {isFormSubmitted && !contactState.formInputStates.nameIsValid && (
+          <label className="form-label-error">
+            {"\u00A0" + contactState.formErrorMessage}
+          </label>
+        )}
+        <Form.Control
+          aria-label="First name"
+          name="name"
+          onChange={handleInputChange}
+        />
+      </Form.Group>
+
+      <Form.Group className="formEmail m-3" controlId="formEmail">
+        <Form.Label>Email address</Form.Label>
+        {isFormSubmitted && !contactState.formInputStates.emailIsValid && (
+          <label className="form-label-error">
+            {"\u00A0" + contactState.formErrorMessage}
+          </label>
+        )}
+        <Form.Control type="email" name="email" onChange={handleInputChange} />
+        <Form.Text className="text-muted">
+          We'll never share your email.
+        </Form.Text>
+      </Form.Group>
+
+      <Form.Group className="formTextArea m-3" controlId="formTextArea">
+        <Form.Label>Message</Form.Label>
+        {isFormSubmitted && !contactState.formInputStates.messageIsValid && (
+          <label className="form-label-error">
+            {"\u00A0" + contactState.formErrorMessage}
+          </label>
+        )}
+        <Form.Control
+          as="textarea"
+          className="textArea"
+          rows={4}
+          name="message"
+          onChange={handleInputChange}
+        />
+      </Form.Group>
+      <div className="text-center">
+        <Button variant="secondary" type="submit" className="formSubmitBtn">
+          Submit
+        </Button>
+      </div>
+    </Form>
   );
 };
 
