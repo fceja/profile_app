@@ -21,7 +21,6 @@ $device-breakpoints: (
 );
 
 // return media query for provided device size
-// @mixin media-query($device-size) {
 @mixin media-query($device-sizes) {
   @each $device-size in $device-sizes {
     $media-query: null;
