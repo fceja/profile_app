@@ -16,7 +16,13 @@ const ContactContainer = lazy(
 const App = () => {
   return (
     <>
-      <Suspense fallback={<h1>Loading...</h1>}>
+      <Suspense
+        fallback={
+          <div className="loading-fallback">
+            <h1>Loading...</h1>
+          </div>
+        }
+      >
         <Routes>
           <Route path="/*" element={<Navigate to={PAGE_PATHS.HOME} />} />
           <Route
