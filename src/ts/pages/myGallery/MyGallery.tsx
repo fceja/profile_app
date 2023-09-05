@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import "styles/pages/imageGallery/ImageGallery.scss";
 import ElementObserver from "ts/common/utils/observeElement/ElementObserver";
 import ImageGallery from "react-image-gallery";
-import { RootState } from "ts/ConfigureStore";
+import { RootState } from "ts/store/ConfigureStore";
 
 const images = [
   {
