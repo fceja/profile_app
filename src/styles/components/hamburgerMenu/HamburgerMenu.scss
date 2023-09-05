@@ -1,3 +1,5 @@
+@import "styles/Breakpoints";
+
 .hamburger-menu-container {
   align-items: flex-start;
   display: flex;
@@ -27,7 +29,7 @@
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  height: 250px;
+  height: 350px;
   width: 50%;
 }
 
@@ -43,7 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 
   a {
@@ -71,4 +73,11 @@
 .hamburger-bar.unclicked {
   transform: rotate(0) translate(0);
   transition: cubic-bezier(0.25, 0.5, 0.25, 1.75) 0.5s;
+}
+
+@include media-query((lg-device, xl-device)) {
+  .menu {
+    width: 30%;
+    height: 500px;
+  }
 }
