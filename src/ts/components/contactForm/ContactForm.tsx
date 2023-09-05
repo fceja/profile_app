@@ -25,10 +25,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
   });
 
   useEffect(() => {
-    isFormValid();
-  }, [contactState.formInputStates]);
-
-  const isFormValid = () => {
+    // checks if form is valid
     const allValid = Object.values(contactState.formInputStates).every(
       (isValid) => isValid === true
     );
@@ -38,7 +35,11 @@ const ContactForm: React.FC<ContactFormProps> = ({
     } else if (contactState.formIsValid !== false) {
       updateFormIsValid(false);
     }
-  };
+  }, [
+    contactState.formInputStates,
+    contactState.formIsValid,
+    updateFormIsValid,
+  ]);
 
   const handleInputChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
