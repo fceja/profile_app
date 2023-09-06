@@ -1,6 +1,7 @@
 import React from "react";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
+import "styles/components/googleMap/GoogleMap.scss";
 import MyMapComponent from "./MyMapComponent";
 
 // return loading or failure div
