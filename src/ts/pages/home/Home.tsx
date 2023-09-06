@@ -12,7 +12,7 @@ export default function Home() {
         <div className="gradient" />
         <img
           className="img-main"
-          src={mainImage.imagePath}
+          src={mainImage.original}
           alt={mainImage.alt}
         />
       </div>

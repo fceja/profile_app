@@ -3,24 +3,11 @@ import { useSelector } from "react-redux";
 
 import "styles/pages/imageGallery/ImageGallery.scss";
 import ElementObserver from "ts/common/utils/observeElement/ElementObserver";
+import { ImageData } from "ts/common/ImageData";
 import ImageGallery from "react-image-gallery";
 import { RootState } from "ts/store/ConfigureStore";
 
-const images = [
-  {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
-  },
-];
-
+const images = ImageData;
 const elemToObserveStr = ".image-gallery-slides";
 
 const MyGallery: React.FC = () => {
