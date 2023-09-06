@@ -1,4 +1,5 @@
 @import "styles/Breakpoints";
+@import "styles/Variables";
 
 .hamburger-menu-container {
   align-items: flex-start;
@@ -19,14 +20,14 @@
 }
 
 .hamburger-bar {
-  background-color: teal;
+  background-color: $default-teal;
   border-radius: 0.5em;
   height: 0.5em;
   width: 4em;
 }
 
 .menu {
-  background-color: whitesmoke;
+  background-color: $default-whitesmoke;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -41,7 +42,6 @@
 .visible {
   position: absolute;
   top: 5em;
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
