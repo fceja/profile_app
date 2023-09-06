@@ -1,3 +1,5 @@
+@import "~/src/styles/Variables";
+
 html,
 body {
   -webkit-font-smoothing: antialiased;
@@ -17,8 +19,9 @@ code {
 }
 
 .loading-fallback {
-  display: "flex";
-  justify-content: "center";
-  align-items: "center";
-  height: "100vh";
+  color: $default-light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

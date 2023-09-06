@@ -20,7 +20,6 @@ export default function Home() {
         <ul>
           <li>Residential</li>
           <li>Commercial</li>
-          <li>Industrial</li>
         </ul>
       </div>
     </div>
