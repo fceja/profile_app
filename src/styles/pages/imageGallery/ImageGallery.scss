@@ -332,6 +332,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   overflow: auto;
   padding: 5px 0;
   height: 100%;
+  width: 100%;
 
   @media (max-width: $ig-small-screen) {
     padding: 3px 0;
@@ -342,6 +343,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
     text-align: center;
     white-space: nowrap;
     height: 100%;
+    width: 100%;
 
     button {
       height: 63px;
