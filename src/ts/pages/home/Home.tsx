@@ -1,15 +1,20 @@
 import React from "react";
 
 import "styles/pages/home/Home.scss";
+import { ImageData } from "ts/common/ImageData";
 
-const mainImage = require("assets/images/main.png");
+const mainImage = ImageData[0];
 
 export default function Home() {
   return (
     <div className="home-img-container">
       <div className="img-gradient-container">
         <div className="gradient" />
-        <img className="img-main" src={mainImage} alt="electrician" />
+        <img
+          className="img-main"
+          src={mainImage.imagePath}
+          alt={mainImage.alt}
+        />
       </div>
       <div className="img-text">
         <ul>
