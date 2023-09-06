@@ -15,7 +15,7 @@ const ElementObserver: React.FC<ElementObserverProps> = ({ elemToObserve }) => {
     observeElementVisibility(elemToObserve, (isVisible) => {
       dispatch(updateElementVisibility(isVisible));
     });
-  }, [dispatch]);
+  }, [dispatch, elemToObserve]);
 
   return null;
 };
