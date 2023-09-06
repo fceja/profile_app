@@ -3,7 +3,6 @@
 
 .home-img-container {
   height: 75vh;
-  margin: 100px 0 100px 0;
   position: relative;
   width: 100%;
 }
@@ -48,12 +47,20 @@
   .img-text {
     font-size: 2em;
   }
+
+  .home-img-container {
+    margin: 25px 0 25px 0;
+  }
 }
 
 /* sm screen sizes */
 @include media-query(sm-device) {
   .img-text {
     font-size: 3em;
+  }
+
+  .home-img-container {
+    margin: 25px 0 25px 0;
   }
 }
 
@@ -62,11 +69,19 @@
   .img-text {
     font-size: 3.5em;
   }
+
+  .home-img-container {
+    margin: 50px 0 50px 0;
+  }
 }
 
 /* lg-xl screen sizes */
 @include media-query((lg-device, xl-device)) {
   .img-text {
     font-size: 4em;
+  }
+
+  .home-img-container {
+    margin: 100px 0 100px 0;
   }
 }
