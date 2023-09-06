@@ -26,7 +26,7 @@ const ContactInfoMap = () => {
           ></circle>
         </svg>
       </div>
-      <span>Serving the Los Angeles Area</span>
+      <span>Serving California</span>
       <GoogleMap />
     </>
   );
