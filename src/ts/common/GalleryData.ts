@@ -1,4 +1,4 @@
-export const ImageData = Object.freeze([
+export const GalleryData = Object.freeze([
   {
     original: require("assets/images/commercial/original/commercial-1.1_4x3.png"),
     thumbnail: require("assets/images/commercial/thumbnail/commercial-1.1_4x3_thumbnail.png"),

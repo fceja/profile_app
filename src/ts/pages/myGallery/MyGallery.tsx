@@ -3,11 +3,11 @@ import { useSelector } from "react-redux";
 
 import "styles/pages/imageGallery/ImageGallery.scss";
 import ElementObserver from "ts/utils/observeElement/ElementObserver";
-import { ImageData } from "ts/common/ImageData";
+import { GalleryData } from "ts/common/GalleryData";
 import ImageGallery from "react-image-gallery";
 import { RootState } from "ts/store/ConfigureStore";
 
-const images = ImageData;
+const images = GalleryData;
 const elemToObserveStr = ".image-gallery-slides";
 
 const MyGallery: React.FC = () => {

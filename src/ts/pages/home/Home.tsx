@@ -1,9 +1,9 @@
 import React from "react";
 
 import "styles/pages/home/Home.scss";
-import { ImageData } from "ts/common/ImageData";
+import { GalleryData } from "ts/common/GalleryData";
 
-const mainImage = ImageData[0];
+const mainImage = GalleryData[0];
 
 export default function Home() {
   return (
