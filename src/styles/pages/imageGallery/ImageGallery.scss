@@ -229,6 +229,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   overflow: hidden;
   position: relative;
   width: 100%;
+  height: 100%;
 }
 
 .image-gallery-slide {
@@ -236,6 +237,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   position: absolute;
   top: 0;
   width: 100%;
+  height: 100%;
 
   &.image-gallery-center {
     position: relative;
@@ -243,7 +245,8 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
   .image-gallery-image {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    height: 100%;
   }
 
   .image-gallery-description {
