@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 import "styles/pages/imageGallery/ImageGallery.scss";
-import ElementObserver from "ts/common/utils/observeElement/ElementObserver";
+import ElementObserver from "ts/utils/observeElement/ElementObserver";
 import { ImageData } from "ts/common/ImageData";
 import ImageGallery from "react-image-gallery";
 import { RootState } from "ts/store/ConfigureStore";

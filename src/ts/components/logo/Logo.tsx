@@ -1,7 +1,7 @@
 import React from "react";
 
 import "styles/components/logo/Logo.scss";
-import SetScrollVar from "ts/common/utils/SetScrollVar";
+import SetScrollVar from "ts/utils/SetScrollVar";
 
 const logoImage = require("assets/images/logo.png");
 
