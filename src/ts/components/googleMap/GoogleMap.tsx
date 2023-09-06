@@ -6,7 +6,7 @@ import MyMapComponent from "./MyMapComponent";
 // return loading or failure div
 const render = (status: Status): React.ReactElement => {
   if (status === Status.FAILURE) return <div>This is error div</div>;
-  return <div>this is Loading... div</div>;
+  return <div>Loading...</div>;
 };
 
 // get api key
