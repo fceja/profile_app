@@ -4,7 +4,7 @@ import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 import "styles/components/contactForm/ContactForm.scss";
-import AxiosClient from "ts/utils/AxiosClient";
+import AxiosClient from "ts/utils/client/AxiosClient";
 import { RootState } from "ts/store/ConfigureStore";
 
 interface ContactFormProps {
