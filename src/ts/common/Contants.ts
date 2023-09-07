@@ -1,6 +1,6 @@
 const PAGE_VALUES = Object.freeze({
   HOME: "home",
-  MYGALLERY: "gallery",
+  MYIMAGEGALLERY: "gallery",
   CONTACT: "contact",
 });
 
@@ -8,7 +8,7 @@ const ROOT_PATH = "";
 
 const PAGE_PATHS = Object.freeze({
   HOME: `${ROOT_PATH}/${PAGE_VALUES.HOME}`,
-  MYGALLERY: `${ROOT_PATH}/${PAGE_VALUES.MYGALLERY}`,
+  MYIMAGEGALLERY: `${ROOT_PATH}/${PAGE_VALUES.MYIMAGEGALLERY}`,
   CONTACT: `${ROOT_PATH}/${PAGE_VALUES.CONTACT}`,
 });
 

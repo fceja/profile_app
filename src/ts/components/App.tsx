@@ -6,8 +6,8 @@ import HomeContainer from "ts/pages/home/HomeContainer";
 import LayoutContainer from "ts/pages/LayoutContainer";
 import { PAGE_PATHS } from "ts/common/Contants";
 
-const MyGalleryContainer = lazy(
-  () => import("ts/pages/myGallery/MyGalleryContainer")
+const MyImageGalleryContainer = lazy(
+  () => import("ts/pages/myImageGallery/MyImageGalleryContainer")
 );
 const ContactContainer = lazy(
   () => import("ts/pages/contact/ContactContainer")
@@ -34,10 +34,10 @@ const App = () => {
             }
           />
           <Route
-            path={PAGE_PATHS.MYGALLERY}
+            path={PAGE_PATHS.MYIMAGEGALLERY}
             element={
               <LayoutContainer>
-                <MyGalleryContainer />
+                <MyImageGalleryContainer />
               </LayoutContainer>
             }
           />

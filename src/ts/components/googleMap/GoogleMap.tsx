@@ -2,49 +2,35 @@ import React from "react";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 import "styles/components/googleMap/GoogleMap.scss";
+import { GoogleMapData } from "ts/common/data/GoogleMapData";
 import MyMapComponent from "./MyMapComponent";
 
 // return loading or failure div
 const render = (status: Status): React.ReactElement => {
-  if (status === Status.FAILURE) return <div>This is error div</div>;
+  if (status === Status.FAILURE) return <div>Errorv</div>;
   return <div>Loading...</div>;
 };
 
-// get api key
 const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY ?? "";
 
-// get google map init vars
-const latStr = process.env.REACT_APP_GOOGLE_MAPS_LAT;
-const lngStr = process.env.REACT_APP_GOOGLE_MAPS_LNG;
 const center = {
-  lat: latStr ? parseFloat(latStr) : 0,
-  lng: lngStr ? parseFloat(lngStr) : 0,
+  lat: GoogleMapData.latitude,
+  lng: GoogleMapData.longitude,
 };
 
-const zoomStr = process.env.REACT_APP_GOOGLE_MAPS_ZOOM;
-const zoom = zoomStr ? parseInt(zoomStr) : 0;
+const zoom = GoogleMapData.zoom;
 
 const styles = {
-  width: process.env.REACT_APP_GOOGLE_MAPS_WIDTH,
-  height: process.env.REACT_APP_GOOGLE_MAPS_HEIGHT,
+  width: GoogleMapData.width,
+  height: GoogleMapData.height,
 };
 
-const mapDebug = process.env.REACT_APP_GOOGLE_MAPS_DEBUG === "true";
-const conditionalStyles = mapDebug
-  ? { borderStyle: "dashed", borderColor: "red" }
-  : {};
-const combinedStyles = { ...styles, ...conditionalStyles };
-
 const GoogleMap = () => {
-  return !mapDebug ? (
+  return (
     <div className="map-container">
       <Wrapper apiKey={apiKey} render={render}>
         <MyMapComponent center={center} zoom={zoom} styles={styles} />
       </Wrapper>
-    </div>
-  ) : (
-    <div className="map-container" style={combinedStyles}>
-      DEBUG is true
     </div>
   );
 };
