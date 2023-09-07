@@ -4,6 +4,7 @@ import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 import "styles/components/contactForm/ContactForm.scss";
+import AxiosClient from "ts/utils/AxiosClient";
 import { RootState } from "ts/store/ConfigureStore";
 
 interface ContactFormProps {
@@ -55,7 +56,17 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
     if (contactState.formIsValid) {
       console.log("Submission successful");
-      // TODO - ping endpoint
+      AxiosClient.post("/contact/sendEmail", {
+        contactName: formData.name,
+        contactEmail: formData.email,
+        contactEmailMessage: formData.message,
+      })
+        .then((resp) => {
+          console.log("resp: ", resp);
+        })
+        .catch((error) => {
+          console.error("error: ", error);
+        });
     } else {
       console.log("Submission NOT successful");
     }
