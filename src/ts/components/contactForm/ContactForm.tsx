@@ -56,7 +56,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
     if (contactState.formIsValid) {
       console.log("Submission successful");
-      AxiosClient.post("/contact/sendEmail", {
+      AxiosClient.post("/sendEmail", {
         contactName: formData.name,
         contactEmail: formData.email,
         contactEmailMessage: formData.message,
