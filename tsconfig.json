@@ -16,7 +16,7 @@
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/ts/components/*"],
       "@common/*": ["./src/ts/common/*"],
-      "@data/*": ["./src/ts/common/data/*"],
+      "@data/*": ["src/ts/data/*"],
       "@pages/*": ["./src/ts/pages/*"],
       "@scripts/*": ["./src/ts/utils/scripts/*"],
       "@store/*": ["./src/ts/store/*"],

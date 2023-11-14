@@ -1,7 +1,7 @@
 import React from "react";
 
 import "@scss/pages/myImageGallery/MyImageGallery.scss";
-import { MyImageGalleryData } from "@data/MyImageGalleryData";
+import { MyImageGalleryData } from "@/ts/data/MyImageGalleryData";
 import ImageGallery from "react-image-gallery";
 
 const images = MyImageGalleryData;
