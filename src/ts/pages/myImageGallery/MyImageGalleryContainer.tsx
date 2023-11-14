@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 
-import MyImageGallery from "./MyImageGallery";
+import MyImageGallery from "@pages/myImageGallery/MyImageGallery";
 
 const MyImageGalleryContainer = connect()(MyImageGallery);
 MyImageGalleryContainer.displayName = "MyImageGalleryContainer";

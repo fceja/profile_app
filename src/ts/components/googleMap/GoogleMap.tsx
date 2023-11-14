@@ -1,9 +1,9 @@
 import React from "react";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
-import "styles/components/googleMap/GoogleMap.scss";
-import { GoogleMapData } from "ts/common/data/GoogleMapData";
-import MyMapComponent from "./MyMapComponent";
+import "@scss/components/googleMap/GoogleMap.scss";
+import { GoogleMapData } from "@data/GoogleMapData";
+import MyMapComponent from "@components/googleMap/MyMapComponent";
 
 // return loading or failure div
 const render = (status: Status): React.ReactElement => {

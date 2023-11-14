@@ -1,11 +1,11 @@
 import { connect } from "react-redux";
 import { Dispatch } from "redux";
 
-import ContactForm from "./ContactForm";
+import ContactForm from "@components/contactForm/ContactForm";
 import {
   updateFormInputState,
   UpdateFormIsValid,
-} from "ts/pages/contact/ContactActions";
+} from "@pages/contact/ContactActions";
 
 const mapStateToProps = () => {
   return {};

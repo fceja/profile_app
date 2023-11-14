@@ -1,7 +1,7 @@
 import React from "react";
 
-import "styles/pages/home/Home.scss";
-import { MyImageGalleryData } from "ts/common/data/MyImageGalleryData";
+import "@scss/pages/home/Home.scss";
+import { MyImageGalleryData } from "@data/MyImageGalleryData";
 
 const mainImage = MyImageGalleryData[0];
 

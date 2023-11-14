@@ -1,8 +1,8 @@
 import React from "react";
 
-import "styles/components/navBar/NavBar.scss";
-import HamburgerMenu from "ts/components/hambugerMenu/HamburgerMenu";
-import TelNumber from "ts/components/telNumber/TelNumber";
+import "@scss/components/navBar/NavBar.scss";
+import HamburgerMenu from "@components/hambugerMenu/HamburgerMenu";
+import TelNumber from "@components/telNumber/TelNumber";
 
 export default function NavBar() {
   return (

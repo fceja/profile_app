@@ -1,17 +1,15 @@
 import React, { lazy, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 
-import "styles/App.scss";
-import HomeContainer from "ts/pages/home/HomeContainer";
-import LayoutContainer from "ts/pages/LayoutContainer";
-import { PAGE_PATHS } from "ts/common/Contants";
+import "@scss/App.scss";
+import HomeContainer from "@pages/home/HomeContainer";
+import LayoutContainer from "@pages/LayoutContainer";
+import { PAGE_PATHS } from "@common/Contants";
 
 const MyImageGalleryContainer = lazy(
-  () => import("ts/pages/myImageGallery/MyImageGalleryContainer")
+  () => import("@pages/myImageGallery/MyImageGalleryContainer")
 );
-const ContactContainer = lazy(
-  () => import("ts/pages/contact/ContactContainer")
-);
+const ContactContainer = lazy(() => import("@pages/contact/ContactContainer"));
 
 const App = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "styles/components/contactInfoPhone/ContactInfoPhone.scss";
+import "@scss/components/contactInfoPhone/ContactInfoPhone.scss";
 
 const ContactInfoPhone = () => {
   return (

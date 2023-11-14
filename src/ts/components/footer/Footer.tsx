@@ -1,6 +1,6 @@
 import React from "react";
 
-import "styles/components/footer/Footer.scss";
+import "@scss/components/footer/Footer.scss";
 
 export default function Footer() {
   const currentDate = new Date();

@@ -1,8 +1,8 @@
 import React from "react";
 
-import "styles/components/logo/Logo.scss";
-import { LogoData } from "ts/common/data/LogoData";
-import SetScrollVar from "ts/utils/scripts/SetScrollVar";
+import "@scss/components/logo/Logo.scss";
+import { LogoData } from "@data/LogoData";
+import SetScrollVar from "@scripts/SetScrollVar";
 
 export default function Logo() {
   SetScrollVar();

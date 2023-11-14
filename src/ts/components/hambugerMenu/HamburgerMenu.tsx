@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import "styles/components/hamburgerMenu/HamburgerMenu.scss";
-import ScrollToTop from "ts/utils/scripts/ScrollToTop";
+import "@scss/components/hamburgerMenu/HamburgerMenu.scss";
+import ScrollToTop from "@scripts/ScrollToTop";
 
 const HamburgerMenu = () => {
   /* state variables */

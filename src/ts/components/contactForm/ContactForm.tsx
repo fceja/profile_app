@@ -3,9 +3,9 @@ import Form from "react-bootstrap/Form";
 import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
-import "styles/components/contactForm/ContactForm.scss";
-import AxiosClient from "ts/utils/axiosClient/AxiosClient";
-import { RootState } from "ts/store/ConfigureStore";
+import "@scss/components/contactForm/ContactForm.scss";
+import AxiosClient from "@utils/axiosClient/AxiosClient";
+import { RootState } from "@store/ConfigureStore";
 
 interface ContactFormProps {
   updateFormInputState: (name: string, isEmpty: boolean) => void;

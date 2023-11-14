@@ -1,6 +1,6 @@
 import React from "react";
 
-import "styles/components/contactInfoEmail/ContactInfoEmail.scss";
+import "@scss/components/contactInfoEmail/ContactInfoEmail.scss";
 
 const ContactInfoEmail = () => {
   return (

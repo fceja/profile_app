@@ -1,4 +1,4 @@
-import * as ContactActionTypes from "ts/pages/contact/ContactActionTypes";
+import * as ContactActionTypes from "@pages/contact/ContactActionTypes";
 
 export const updateFormInputState = (
   name: string,
