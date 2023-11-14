@@ -1,6 +1,9 @@
+@import "../../Variables";
+
 footer {
   align-items: center;
-  color: rgb(167, 159, 162);
+  color: $default-teal;
+  font-weight: 400;
   display: flex;
   flex-shrink: 0;
   height: 5em;
