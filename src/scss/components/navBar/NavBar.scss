@@ -1,8 +1,10 @@
 @import "../../Variables";
 
-.nav-bar {
-  background-color: rgb(37, 39, 53);
+.nav-bar-container {
+  background-color: rgb(238, 229, 233);
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   height: 5em;
   position: sticky;
   top: 0;
