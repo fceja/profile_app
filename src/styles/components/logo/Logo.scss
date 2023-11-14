@@ -1,4 +1,4 @@
-@import "styles/Variables";
+@import "../../Variables";
 
 .img-logo-container {
   opacity: calc(1 - (var(--scroll) * 0.025));
