@@ -1,14 +1,6 @@
 @import "../../Breakpoints";
 @import "../../Variables";
 
-.hamburger-menu-container {
-  align-items: flex-start;
-  display: flex;
-  height: 100%;
-  position: relative;
-  margin-right: 4%;
-}
-
 .hamburger-menu-bar-container {
   cursor: pointer;
   display: flex;
@@ -79,5 +71,18 @@
   .menu {
     width: 30%;
     height: 500px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .hamburger-menu-container {
+    display: block;
+    height: 100%;
+    margin-right: 4%;
+  }
+}
+@media (min-width: 501px) {
+  .hamburger-menu-container {
+    display: none;
   }
 }

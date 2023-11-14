@@ -1,7 +1,6 @@
 @import "../../Variables";
 
 .nav-bar-container {
-  background-color: rgb(238, 229, 233);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -9,4 +8,9 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.nav-logo-container {
+  margin-left: 4%;
+  height: 100%;
 }
