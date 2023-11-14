@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "./",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
@@ -10,12 +10,23 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "dist",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/ts/components/*"],
+      "@common/*": ["./src/ts/common/*"],
+      "@data/*": ["./src/ts/common/data/*"],
+      "@pages/*": ["./src/ts/pages/*"],
+      "@scripts/*": ["./src/ts/utils/scripts/*"],
+      "@store/*": ["./src/ts/store/*"],
+      "@scss/*": ["./src/styles/*"],
+      "@utils/*": ["./src/ts/utils/*"]
+    },
     "skipLibCheck": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "strict": true,
     "strictNullChecks": true,
     "target": "es2016"
-  },
-  "include": ["src"]
+  }
 }
