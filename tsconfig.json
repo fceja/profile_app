@@ -20,7 +20,7 @@
       "@pages/*": ["./src/ts/pages/*"],
       "@scripts/*": ["./src/ts/utils/scripts/*"],
       "@store/*": ["./src/ts/store/*"],
-      "@scss/*": ["./src/styles/*"],
+      "@scss/*": ["./src/scss/*"],
       "@utils/*": ["./src/ts/utils/*"]
     },
     "skipLibCheck": true,
