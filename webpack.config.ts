@@ -65,7 +65,7 @@ module.exports = {
     // copy neccessary files
     new CopyWebpackPlugin({
       patterns: [
-        { from: "public/images/favicon.ico", to: "favicon.ico" },
+        { from: "public/favicon.ico", to: "favicon.ico" },
         { from: "public/manifest.json", to: "manifest.json" },
       ],
     }),
