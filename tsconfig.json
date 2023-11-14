@@ -18,7 +18,7 @@
       "@common/*": ["./src/ts/common/*"],
       "@data/*": ["src/ts/data/*"],
       "@pages/*": ["./src/ts/pages/*"],
-      "@scripts/*": ["./src/ts/utils/scripts/*"],
+      "@scripts/*": ["src/ts/utils/pageActions/*"],
       "@store/*": ["./src/ts/store/*"],
       "@scss/*": ["./src/scss/*"],
       "@utils/*": ["./src/ts/utils/*"]
