@@ -26,26 +26,34 @@
 }
 
 /* hamburger menu visibility */
+
 .hidden {
   display: none;
 }
 
-.visible {
-  position: absolute;
-  top: 5em;
-  right: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-
-  a {
-    margin-top: 15px;
-    margin-bottom: 15px;
+@media (min-width: 501px) {
+  .visible {
+    display: none;
   }
 }
 
+@media (max-width: 500px) {
+  .visible {
+    position: absolute;
+    top: 5em;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    a {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
 /* animations */
 .hamburger-bar.clicked:nth-child(1) {
   transform: rotate(45deg) translate(0.65em, 1.25em);
@@ -108,6 +116,11 @@
   touch-action: manipulation;
   width: 100px;
   will-change: transform;
+
+  &-contact {
+    background-color: $default-teal;
+    color: $default-white;
+  }
 }
 
 .ham-menu-btn-link:disabled {
@@ -118,6 +131,14 @@
   color: $default-white;
   background-color: $default-teal;
   border-color: $default-white;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.ham-menu-btn-link-contact:hover {
+  color: $default-teal;
+  background-color: $default-white;
+  border-color: $default-teal;
 
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);

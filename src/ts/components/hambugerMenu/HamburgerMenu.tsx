@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "@scss/components/hamburgerMenu/HamburgerMenu.scss";
 import ScrollToTop from "@/ts/utils/pageActions/ScrollToTop";
 
-// TODO - invert color of contact us button
 const HamburgerMenu = () => {
   /* state variables */
   const [burgerClass, setBurgerClass] = useState("hamburger-bar unclicked");
