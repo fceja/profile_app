@@ -2,27 +2,13 @@
 @import "../../Variables";
 
 .home-img-container {
-  height: 75vh;
-  position: relative;
-  width: 100%;
+  padding: 10px;
 }
 
 .img-text {
-  align-items: center;
   display: flex;
-  height: 100%;
-  justify-content: flex-end;
-  position: relative;
+  justify-content: center;
   width: 95%;
-}
-
-.img-gradient-container {
-  left: 50%;
-  height: 80%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
 }
 
 .gradient {
@@ -40,6 +26,7 @@
   height: 100%;
   object-fit: cover;
   width: 100%;
+  border-radius: 20px;
 }
 
 /* sm screen sizes */
