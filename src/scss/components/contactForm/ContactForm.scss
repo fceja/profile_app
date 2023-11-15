@@ -31,3 +31,9 @@ form {
     padding-top: 30px !important;
   }
 }
+
+@media (min-width: $device-breakpoint-zero) and (max-width: $device-breakpoint-md) {
+  form {
+    width: 90%;
+  }
+}
