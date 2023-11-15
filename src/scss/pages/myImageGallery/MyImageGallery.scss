@@ -17,6 +17,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
 // Container styles
 .app-react-image-gallery {
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,7 +145,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   -webkit-tap-highlight-color: $ig-transparent;
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,8 +173,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 80%; // possibly covers arrows
-  max-width: 1200px;
+  height: 100%;
 
   &.fullscreen {
     background: $ig-black;
@@ -186,7 +186,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   &.image-gallery-thumbnails-left,
   &.image-gallery-thumbnails-right {
     .image-gallery-slide .image-gallery-image {
-      max-height: 100vh;
+      max-height: 100%;
     }
   }
 }
@@ -269,8 +269,10 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 }
 
 .image-gallery-thumbnails-wrapper {
-  margin-top: 25px;
-  width: 85%;
+  height: 20%;
+  width: 80%;
+  display: flex;
+  align-items: center;
 
   &.thumbnails-swipe-horizontal {
     touch-action: pan-y;
@@ -324,10 +326,13 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   }
 }
 
+.image-gallery-thumbnails-container {
+  width: 80%;
+}
+
 .image-gallery-thumbnails {
   overflow: auto;
   padding: 5px 0;
-  height: 100%;
   width: 100%;
 
   @media (max-width: $ig-small-screen) {
