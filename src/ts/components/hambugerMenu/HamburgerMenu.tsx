@@ -70,14 +70,22 @@ const HamburgerMenu = () => {
         </div>
       </div>
       <div className={menuClass} ref={menuRef}>
-        <Link to="/" onClick={handleOnClick}>
+        <Link className="ham-menu-btn-link" to="/" onClick={handleOnClick}>
           Home
         </Link>
-        <Link to="/gallery" onClick={handleOnClick}>
+        <Link
+          className="ham-menu-btn-link"
+          to="/gallery"
+          onClick={handleOnClick}
+        >
           Gallery
         </Link>
-        <Link to="/contact" onClick={handleOnClick}>
-          Contact
+        <Link
+          className="ham-menu-btn-link"
+          to="/contact"
+          onClick={handleOnClick}
+        >
+          Contact Us
         </Link>
       </div>
     </>

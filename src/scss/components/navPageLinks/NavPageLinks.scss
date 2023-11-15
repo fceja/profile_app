@@ -34,21 +34,37 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 100px;
+  width: 130px;
   will-change: transform;
+
+  &-contact {
+    background-color: $default-teal;
+    color: $default-white;
+  }
 }
 
 .btn-link:disabled {
   pointer-events: none;
 }
 
+.btn-link,
+.btn-link-contact {
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+}
+
 .btn-link:hover {
   color: $default-white;
   background-color: $default-teal;
-  border-color: $default-black;
+  border-color: $default-white;
+}
 
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
+.btn-link-contact:hover {
+  color: $default-teal;
+  background-color: $default-white;
+  border-color: $default-teal;
 }
 
 .btn-link:active {

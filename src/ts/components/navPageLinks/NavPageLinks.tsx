@@ -12,8 +12,8 @@ const NavPageLinks: React.FC = () => {
       <Link className="btn-link" to="/gallery">
         Gallery
       </Link>
-      <Link className="btn-link" to="/contact">
-        Contact
+      <Link className="btn-link btn-link-contact" to="/contact">
+        Contact Us
       </Link>
     </div>
   );
