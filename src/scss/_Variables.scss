@@ -15,3 +15,10 @@ $default-container-margin-top-bottom: $default-container-margin 0
 // screen / devices sizes
 $device-sizes: "xs-device", "sm-device", "md-device", "lg-device", "xl-device";
 $default-max-width: 1200px;
+
+$device-breakpoint-zero: 0px;
+$device-breakpoint-xs: 320px;
+$device-breakpoint-sm: 576px;
+$device-breakpoint-md: 768px;
+$device-breakpoint-lg: 992px;
+$device-breakpoint-xl: 1200px;

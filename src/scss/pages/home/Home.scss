@@ -43,45 +43,32 @@
 }
 
 /* sm screen sizes */
-@include media-query(xs-device) {
+@media (min-width: $device-breakpoint-zero) and (max-width: $device-breakpoint-xs) {
   .img-text {
     font-size: 2em;
   }
+}
 
-  .home-img-container {
-    margin: 25px 0 25px 0;
+@media (min-width: $device-breakpoint-xs) and (max-width: $device-breakpoint-sm) {
+  .img-text {
+    font-size: 2.5em;
   }
 }
 
-/* sm screen sizes */
-@include media-query(sm-device) {
+@media (min-width: $device-breakpoint-sm) and (max-width: $device-breakpoint-md) {
   .img-text {
     font-size: 3em;
   }
-
-  .home-img-container {
-    margin: 25px 0 25px 0;
-  }
 }
 
-/* md screen sizes */
-@include media-query(md-device) {
+@media (min-width: $device-breakpoint-md) and (max-width: $device-breakpoint-lg) {
   .img-text {
     font-size: 3.5em;
   }
-
-  .home-img-container {
-    margin: 50px 0 50px 0;
-  }
 }
 
-/* lg-xl screen sizes */
-@include media-query((lg-device, xl-device)) {
+@media (min-width: $device-breakpoint-lg) and (max-width: $device-breakpoint-xl) {
   .img-text {
     font-size: 4em;
-  }
-
-  .home-img-container {
-    margin: 100px 0 100px 0;
   }
 }
