@@ -12,6 +12,7 @@ interface ContactFormProps {
   updateFormIsValid: (formIsValid: boolean) => void;
 }
 
+// TODO - fix submit btn spacing
 const ContactForm: React.FC<ContactFormProps> = ({
   updateFormInputState,
   updateFormIsValid,

@@ -11,6 +11,7 @@ const MyImageGalleryContainer = lazy(
 );
 const ContactContainer = lazy(() => import("@pages/contact/ContactContainer"));
 
+// TODO - refactor as hooks for all components
 const App = () => {
   return (
     <>

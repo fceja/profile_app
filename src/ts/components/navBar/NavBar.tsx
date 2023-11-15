@@ -5,6 +5,7 @@ import HamburgerMenu from "@components/hambugerMenu/HamburgerMenu";
 import { LogoData } from "@/ts/data/LogoData";
 import NavPageLinks from "../navPageLinks/NavPageLinks";
 
+// TODO - verify nav bar container sizing is identical across pages / devices
 export default function NavBar() {
   return (
     <nav className="nav-bar-container" id="id-nav-bar">
