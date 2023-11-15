@@ -2,7 +2,7 @@ import React from "react";
 
 import "@scss/components/navBar/NavBar.scss";
 import HamburgerMenu from "@components/hambugerMenu/HamburgerMenu";
-import { LogoData } from "@/ts/data/LogoData";
+import { LogoData } from "@data/LogoData";
 import NavPageLinks from "../navPageLinks/NavPageLinks";
 
 // TODO - verify nav bar container sizing is identical across pages / devices

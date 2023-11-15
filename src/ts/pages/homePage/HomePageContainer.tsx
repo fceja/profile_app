@@ -1,8 +1,8 @@
 import { connect } from "react-redux";
 
-import Home from "@pages/home/Home";
+import HomePage from "@/ts/pages/homePage/HomePage";
 
-const HomeContainer = connect()(Home);
+const HomeContainer = connect()(HomePage);
 HomeContainer.displayName = "HomeContainer";
 
 export default HomeContainer;

@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 
 import "@scss/App.scss";
-import HomeContainer from "@pages/home/HomeContainer";
+import HomeContainer from "@pages/homePage/HomePageContainer";
 import LayoutContainer from "@pages/LayoutContainer";
 import { PAGE_PATHS } from "@common/Contants";
 

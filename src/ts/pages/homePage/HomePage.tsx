@@ -1,13 +1,13 @@
 import React from "react";
 
-import "@scss/pages/home/Home.scss";
+import "@scss/pages/homePage/HomePage.scss";
 import { MyImageGalleryData } from "@/ts/data/MyImageGalleryData";
 
 const mainImage = MyImageGalleryData[0];
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="home-img-container m-4">
+    <div className="home-page-container m-4 mt-5 mb-5">
       <div className="message-container text-center">
         <h1>This is title</h1>
         <p>

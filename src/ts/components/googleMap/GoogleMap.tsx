@@ -2,7 +2,7 @@ import React from "react";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 import "@scss/components/googleMap/GoogleMap.scss";
-import { GoogleMapData } from "@/ts/data/GoogleMapData";
+import { GoogleMapData } from "@data/GoogleMapData";
 import MyMapComponent from "@components/googleMap/MyMapComponent";
 
 // return loading or failure div
