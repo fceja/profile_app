@@ -5,9 +5,9 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: space-evenly;
   width: 4em;
+  height: 100%;
 }
 
 .hamburger-bar {
@@ -26,7 +26,6 @@
 }
 
 /* hamburger menu visibility */
-
 .hidden {
   display: none;
 }
@@ -54,6 +53,7 @@
     }
   }
 }
+
 /* animations */
 .hamburger-bar.clicked:nth-child(1) {
   transform: rotate(45deg) translate(0.65em, 1.25em);

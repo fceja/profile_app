@@ -2,7 +2,7 @@
 @import "../../Variables";
 
 .home-img-container {
-  height: 100%;
+  height: 85%;
 }
 
 .img-bullets-container {
@@ -36,7 +36,6 @@
 }
 
 .img-gradient-container {
-  height: 100%;
   width: 100%;
   position: relative;
 }
@@ -64,5 +63,4 @@ img.img-main {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100%;
 }

@@ -1,12 +1,10 @@
 @import "../../Variables";
 
 footer {
-  align-items: center;
   color: $default-teal;
   font-weight: 400;
+  height: 10vh;
   display: flex;
-  flex-shrink: 0;
-  height: 10%;
   justify-content: center;
-  width: 100%;
+  align-items: center;
 }
