@@ -2,11 +2,12 @@
 @import "../../Variables";
 
 .contact-info-form-container {
+  box-sizing: border-box;
+  height: 100%;
   align-items: center;
   display: flex;
   flex: 1;
   justify-content: center;
-  margin: $default-container-margin-top-bottom;
 }
 
 @include media-query((xs-device, sm-device)) {

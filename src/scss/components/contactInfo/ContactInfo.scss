@@ -2,22 +2,18 @@
 @import "../../Variables";
 
 section {
-  margin: 20px 0 20px 0;
+  margin: 15px 0 15px 0;
 }
 
 .contact-info {
-  margin: 10px;
+  margin: 15px;
+  border-style: solid;
+  border-color: rgb(210, 210, 210);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 }
 
 div.contact-info {
   background-color: #d9dcd6;
   text-align: center;
   width: 50%;
-  padding: 10px;
-}
-
-@include media-query((xs-device, sm-device)) {
-  div.contact-info {
-    width: 90%;
-  }
 }
