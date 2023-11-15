@@ -8,7 +8,7 @@ const mainImage = MyImageGalleryData[0];
 export default function Home() {
   return (
     <div className="home-img-container m-4">
-      <div className="text-container text-center">
+      <div className="message-container text-center">
         <h1>This is title</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -22,7 +22,7 @@ export default function Home() {
           including versions of Lorem Ipsum.
         </p>
       </div>
-      <div className="img-text-container">
+      <div className="img-bullets-container">
         <div className="img-gradient-container">
           <div className="gradient" />
           <img
