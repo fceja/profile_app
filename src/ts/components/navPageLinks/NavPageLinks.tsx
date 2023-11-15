@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import "@scss/components/navPageLinks/NavPageLinks.scss";
 
-// TODO - update spacing of buttons when screen resizes
 const NavPageLinks: React.FC = () => {
   return (
     <div className="nav-page-links-container">

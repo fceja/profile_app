@@ -82,14 +82,15 @@
   }
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
+// toggle visiblity of ham menu
+@media (min-width: 0px) and (max-width: 551px) {
   .hamburger-menu-container {
     display: block;
     height: 100%;
     margin-right: 4%;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 552px) {
   .hamburger-menu-container {
     display: none;
   }
