@@ -7,7 +7,7 @@ const mainImage = MyImageGalleryData[0];
 
 export default function Home() {
   return (
-    <div className="home-img-container">
+    <div className="home-img-container m-4">
       <div className="text-container text-center">
         <h1>This is title</h1>
         <p>
@@ -22,19 +22,21 @@ export default function Home() {
           including versions of Lorem Ipsum.
         </p>
       </div>
-      <div className="img-gradient-container">
-        <div className="gradient" />
-        <img
-          className="img-main"
-          src={mainImage.original}
-          alt={mainImage.alt}
-        />
-      </div>
-      <div className="img-text">
-        <ul>
-          <li>Residential</li>
-          <li>Commercial</li>
-        </ul>
+      <div className="img-text-container">
+        <div className="img-gradient-container">
+          <div className="gradient" />
+          <img
+            className="img-main"
+            src={mainImage.original}
+            alt={mainImage.alt}
+          />
+        </div>
+        <div className="sub-text mt-3">
+          <ul>
+            <li>Residential</li>
+            <li>Commercial</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
