@@ -67,7 +67,8 @@
   border-color: $default-teal;
 }
 
-.btn-link:active {
+.btn-link:active,
+.btn-link-contact:active {
   box-shadow: none;
   transform: translateY(0);
 }

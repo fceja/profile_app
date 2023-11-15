@@ -117,13 +117,14 @@
 .ham-menu-btn-link:hover {
   color: $default-white;
   background-color: $default-teal;
-  border-color: $default-black;
+  border-color: $default-white;
 
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
 
-.ham-menu-btn-link:active {
+.ham-menu-btn-link:active,
+.ham-menu-btn-link-contact:active {
   box-shadow: none;
   transform: translateY(0);
 }
