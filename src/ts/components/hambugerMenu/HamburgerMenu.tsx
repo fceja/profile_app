@@ -70,15 +70,15 @@ const HamburgerMenu = () => {
         </div>
       </div>
       <div className={menuClass} ref={menuRef}>
+        <Link className="ham-menu-btn-link" to="/" onClick={handleOnClick}>
+          Home
+        </Link>
         <Link
           className="ham-menu-btn-link"
           to="/gallery"
           onClick={handleOnClick}
         >
           Gallery
-        </Link>
-        <Link className="ham-menu-btn-link" to="/" onClick={handleOnClick}>
-          Home
         </Link>
         <Link
           className="ham-menu-btn-link ham-menu-btn-link-contact"

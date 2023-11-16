@@ -1,20 +1,25 @@
 @import "../../Breakpoints";
 @import "../../Variables";
 
+$menu-bar-container-height: 100px;
+$menu-bar-container-width: calc($menu-bar-container-height / 1.25);
+
 .hamburger-menu-bar-container {
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 4em;
-  height: 100%;
+  max-height: $menu-bar-container-height;
+  min-height: $menu-bar-container-height;
+  max-width: $menu-bar-container-width;
+  min-width: $menu-bar-container-width;
 }
 
 .hamburger-bar {
   background-color: $default-teal;
   border-radius: 0.5em;
-  height: 0.5em;
-  width: 4em;
+  width: 100%;
+  height: 8px;
 }
 
 .menu {
@@ -56,7 +61,7 @@
 
 /* animations */
 .hamburger-bar.clicked:nth-child(1) {
-  transform: rotate(45deg) translate(0.65em, 1.25em);
+  transform: rotate(45deg) translate(0, calc($menu-bar-container-width / 2) - 1);
   transition: ease-out 0.5s;
 }
 
@@ -66,7 +71,8 @@
 }
 
 .hamburger-bar.clicked:nth-child(3) {
-  transform: rotate(135deg) translate(-0.65em, 1.25em);
+  transform: rotate(-45deg)
+    translate(0, -1 * (calc($menu-bar-container-width / 2) - 1));
   transition: ease-out 0.5s;
 }
 
@@ -85,9 +91,11 @@
 // toggle visiblity of ham menu
 @media (min-width: 0px) and (max-width: 551px) {
   .hamburger-menu-container {
-    display: block;
-    height: 100%;
     margin-right: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 }
 @media (min-width: 552px) {
