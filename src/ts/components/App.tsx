@@ -9,7 +9,7 @@ import { PAGE_PATHS } from "@common/Contants";
 const MyImageGalleryContainer = lazy(
   () => import("@pages/myImageGallery/MyImageGalleryContainer")
 );
-const ContactContainer = lazy(() => import("@pages/contact/ContactContainer"));
+const ContactContainer = lazy(() => import("@pages/contactPage/ContactPageContainer"));
 
 // TODO - refactor as hooks for all components
 const App = () => {

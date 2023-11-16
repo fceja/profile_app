@@ -5,7 +5,7 @@ import ContactForm from "@components/contactForm/ContactForm";
 import {
   updateFormInputState,
   UpdateFormIsValid,
-} from "@pages/contact/ContactActions";
+} from "@pages/contactPage/ContactPageActions";
 
 const mapStateToProps = () => {
   return {};

@@ -1,8 +1,8 @@
 import { connect } from "react-redux";
 
-import Contact from "@pages/contact/Contact";
+import ContactPage from "@pages/contactPage/ContactPage";
 
-const ContactContainer = connect()(Contact);
+const ContactContainer = connect()(ContactPage);
 ContactContainer.displayName = "ContactContainer";
 
 export default ContactContainer;
