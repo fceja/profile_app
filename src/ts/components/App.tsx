@@ -7,7 +7,7 @@ import LayoutContainer from "@pages/LayoutContainer";
 import { PAGE_PATHS } from "@common/Contants";
 
 const MyImageGalleryContainer = lazy(
-  () => import("@pages/myImageGallery/MyImageGalleryContainer")
+  () => import("@pages/GalleryPage/GalleryPageContainer")
 );
 const ContactContainer = lazy(() => import("@pages/contactPage/ContactPageContainer"));
 

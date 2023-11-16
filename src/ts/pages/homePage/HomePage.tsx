@@ -1,9 +1,9 @@
 import React from "react";
 
 import "@scss/pages/homePage/HomePage.scss";
-import { MyImageGalleryData } from "@data/MyImageGalleryData";
+import { GalleryImageData } from "@data/GalleryData";
 
-const mainImage = MyImageGalleryData[0];
+const mainImage = GalleryImageData[0];
 
 export default function HomePage() {
   return (
