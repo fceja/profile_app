@@ -4,7 +4,8 @@ import "@scss/pages/myImageGallery/MyImageGallery.scss";
 import { MyImageGalleryData } from "@data/MyImageGalleryData";
 import ImageGallery from "react-image-gallery";
 
-// TODO - for mobile, images heights are dynamic
+// TODO - will need to prepare proper aspect ratio for images, so that the
+// size appears identical in the slider
 const images = MyImageGalleryData;
 
 const MyImageGallery: React.FC = () => {

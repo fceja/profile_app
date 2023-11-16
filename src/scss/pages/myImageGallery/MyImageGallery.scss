@@ -17,13 +17,13 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
 // Container styles
 .app-react-image-gallery {
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  position: relative;
-  z-index: 0;
+  height: 65vh;
+  max-width: 1300px;
+  width: 90%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // SVG ICON STYLES
@@ -143,12 +143,8 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 .image-gallery {
   @include vendor-prefix("user-select", none);
   -webkit-tap-highlight-color: $ig-transparent;
-  position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   &.fullscreen-modal {
     background: $ig-black;
@@ -164,10 +160,8 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 }
 
 .image-gallery-content {
-  position: relative;
   line-height: 0;
   top: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,10 +171,6 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
   &.fullscreen {
     background: $ig-black;
-  }
-
-  .image-gallery-slide .image-gallery-image {
-    max-height: calc(100vh - 80px); // 80 px for the thumbnail space
   }
 
   &.image-gallery-thumbnails-left,
@@ -193,11 +183,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
 .image-gallery-slide-wrapper {
   height: 80%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  position: relative; // for arrows
 
   &.image-gallery-thumbnails-left,
   &.image-gallery-thumbnails-right {
@@ -223,10 +209,12 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 }
 
 .image-gallery-slides {
-  overflow: hidden;
+  background-color: black;
   position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  min-height: 100%;
   width: 100%;
-  height: 100%;
 }
 
 .loading-div {
@@ -236,18 +224,30 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 .image-gallery-slide {
   left: 0;
   position: absolute;
-  top: 0;
-  width: 100%;
   height: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 
   &.image-gallery-center {
     position: relative;
   }
 
+  &:not(.image-gallery-center, .image-gallery-left, .image-gallery-right) {
+    // this removes chain of images displayed when slide goes from first image to last image.
+    display: none !important;
+  }
+
+  div.image-gallery-slide-wrapper {
+    display: none !important;
+  }
+
   .image-gallery-image {
+    background-color: black;
     width: 100%;
-    object-fit: cover;
-    height: 100%;
+    object-fit: contain;
+    max-height: 100%;
+    min-height: 100%;
   }
 
   .image-gallery-description {
@@ -475,25 +475,8 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   height: 100%;
 }
 
-.app .image-gallery,
-.app-sandbox {
+.app .image-gallery {
   margin: 0 auto;
-  width: 65%;
-}
-
-@media (max-width: 1320px) {
-  .app-sandbox-content {
-    padding: 0 20px;
-  }
-}
-
-.app-sandbox {
-  margin: 40px auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
 }
 
 .app-buttons li {
@@ -532,8 +515,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 }
 
 @media (max-width: 1024px) {
-  .app .image-gallery,
-  .app-sandbox {
+  .app .image-gallery {
     width: 100%;
   }
 }
