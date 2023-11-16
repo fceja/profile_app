@@ -9,7 +9,9 @@ import { PAGE_PATHS } from "@common/Contants";
 const MyImageGalleryContainer = lazy(
   () => import("@pages/GalleryPage/GalleryPageContainer")
 );
-const ContactContainer = lazy(() => import("@pages/contactPage/ContactPageContainer"));
+const ContactContainer = lazy(
+  () => import("@pages/contactPage/ContactPageContainer")
+);
 
 // TODO - refactor as hooks for all components
 const App = () => {
@@ -23,9 +25,9 @@ const App = () => {
         }
       >
         <Routes>
-          <Route path="/*" element={<Navigate to={PAGE_PATHS.HOME} />} />
+          <Route path="/*" element={<Navigate to="/" />} />
           <Route
-            path={PAGE_PATHS.HOME}
+            path="/"
             element={
               <LayoutContainer>
                 <HomeContainer />
