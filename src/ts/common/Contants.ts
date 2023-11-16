@@ -1,15 +1,15 @@
 const PAGE_VALUES = Object.freeze({
-  HOME: "home",
-  MYIMAGEGALLERY: "gallery",
-  CONTACT: "contact",
+  HOME_PAGE: "home",
+  GALLERY_PAGE: "gallery",
+  CONTACT_PAGE: "contact",
 });
 
 const ROOT_PATH = "";
 
 const PAGE_PATHS = Object.freeze({
-  HOME: `${ROOT_PATH}/${PAGE_VALUES.HOME}`,
-  MYIMAGEGALLERY: `${ROOT_PATH}/${PAGE_VALUES.MYIMAGEGALLERY}`,
-  CONTACT: `${ROOT_PATH}/${PAGE_VALUES.CONTACT}`,
+  HOME_PAGE: `${ROOT_PATH}/${PAGE_VALUES.HOME_PAGE}`,
+  GALLERY_PAGE: `${ROOT_PATH}/${PAGE_VALUES.GALLERY_PAGE}`,
+  CONTACT_PAGE: `${ROOT_PATH}/${PAGE_VALUES.CONTACT_PAGE}`,
 });
 
 export { PAGE_PATHS };

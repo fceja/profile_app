@@ -35,7 +35,7 @@ const App = () => {
             }
           />
           <Route
-            path={PAGE_PATHS.MYIMAGEGALLERY}
+            path={PAGE_PATHS.GALLERY_PAGE}
             element={
               <LayoutContainer>
                 <MyImageGalleryContainer />
@@ -43,7 +43,7 @@ const App = () => {
             }
           />
           <Route
-            path={PAGE_PATHS.CONTACT}
+            path={PAGE_PATHS.CONTACT_PAGE}
             element={
               <LayoutContainer>
                 <ContactContainer />
