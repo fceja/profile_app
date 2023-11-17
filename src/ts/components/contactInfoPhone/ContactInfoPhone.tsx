@@ -4,8 +4,8 @@ import "@scss/components/contactInfoPhone/ContactInfoPhone.scss";
 
 const ContactInfoPhone = () => {
   return (
-    <>
-      <div className="contact-info-ph-container">
+    <section className="contact-info-ph-container mt-3 mb-3">
+      <div className="circle-ph">
         <svg
           className="contact-info-ph-svg-icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ const ContactInfoPhone = () => {
         </svg>
       </div>
       <span>(123) 123-4321</span>
-    </>
+    </section>
   );
 };
 

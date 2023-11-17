@@ -5,8 +5,8 @@ import GoogleMap from "@components/googleMap/GoogleMap";
 
 const ContactInfoMap = () => {
   return (
-    <>
-      <div className="contact-info-map-container">
+    <section className="contact-info-map-container mt-3 mb-3">
+      <div className="circle-map">
         <svg
           className="contact-info-map-svg-icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const ContactInfoMap = () => {
       </div>
       <span>Serving California</span>
       <GoogleMap />
-    </>
+    </section>
   );
 };
 

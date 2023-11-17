@@ -4,8 +4,8 @@ import "@scss/components/contactInfoEmail/ContactInfoEmail.scss";
 
 const ContactInfoEmail = () => {
   return (
-    <>
-      <div className="contact-info-em-container">
+    <section className="contact-info-em-container mt-3 mb-3">
+      <div className="circle-em">
         <svg
           className="contact-info-em-svg-icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ const ContactInfoEmail = () => {
         </svg>
       </div>
       <span>johnAdams@gmail.com</span>
-    </>
+    </section>
   );
 };
 

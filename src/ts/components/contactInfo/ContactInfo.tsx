@@ -9,18 +9,10 @@ import ContactInfoSocial from "@components/contactInfoSocial/ContactInfoSocial";
 export default function ContactInfo() {
   return (
     <div className="contact-info">
-      <section>
-        <ContactInfoPhone />
-      </section>
-      <section>
-        <ContactInfoEmail />
-      </section>
-      <section>
-        <ContactInfoSocial />
-      </section>
-      <section>
-        <ContactInfoMap />
-      </section>
+      <ContactInfoPhone />
+      <ContactInfoEmail />
+      <ContactInfoSocial />
+      <ContactInfoMap />
     </div>
   );
 }
