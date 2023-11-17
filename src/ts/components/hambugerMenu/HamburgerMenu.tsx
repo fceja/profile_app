@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import "@scss/components/hamburgerMenu/HamburgerMenu.scss";
 import ScrollToTop from "@utils/pageActions/ScrollToTop";
 
+// TODO - refactor out into hooks
+// TODO - simplify
 const HamburgerMenu = () => {
   /* state variables */
   const [burgerClass, setBurgerClass] = useState("hamburger-bar unclicked");

@@ -12,6 +12,8 @@ interface ContactFormProps {
   updateFormIsValid: (formIsValid: boolean) => void;
 }
 
+// TODO - refactor out into hooks
+// TODO - simplify
 const ContactForm: React.FC<ContactFormProps> = ({
   updateFormInputState,
   updateFormIsValid,

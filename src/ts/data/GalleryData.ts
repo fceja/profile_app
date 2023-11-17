@@ -1,3 +1,4 @@
+// TODO - point to s3 image url instead, keeping as is for development purposes
 export const GalleryImageData = Object.freeze([
   {
     original: require("@assets/images/commercial/original/commercial-1.1_4x3.png"),
