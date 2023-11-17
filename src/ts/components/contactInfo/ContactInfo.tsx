@@ -6,7 +6,7 @@ import ContactInfoMap from "@components/contactInfoMap/ContactInfoMap";
 import ContactInfoPhone from "@components/contactInfoPhone/ContactInfoPhone";
 import ContactInfoSocial from "@components/contactInfoSocial/ContactInfoSocial";
 
-export default function ContactInfo() {
+const ContactInfo = () => {
   return (
     <div className="contact-info">
       <ContactInfoPhone />
@@ -15,4 +15,6 @@ export default function ContactInfo() {
       <ContactInfoMap />
     </div>
   );
-}
+};
+
+export default ContactInfo;

@@ -4,7 +4,7 @@ import "@scss/components/logo/Logo.scss";
 import { LogoData } from "@data/LogoData";
 import SetScrollVar from "@utils/pageActions/SetScrollVar";
 
-export default function Logo() {
+const Logo = () => {
   SetScrollVar();
 
   return (
@@ -16,4 +16,6 @@ export default function Logo() {
       />
     </div>
   );
-}
+};
+
+export default Logo;

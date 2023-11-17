@@ -5,7 +5,7 @@ import HamburgerMenu from "@components/hambugerMenu/HamburgerMenu";
 import { LogoData } from "@data/LogoData";
 import NavPageLinks from "@components/navPageLinks/NavPageLinks";
 
-export default function NavBar() {
+const NavBar = () => {
   return (
     <nav className="nav-bar-container mt-4" id="id-nav-bar">
       <div className="nav-logo-container">
@@ -15,4 +15,6 @@ export default function NavBar() {
       <NavPageLinks />
     </nav>
   );
-}
+};
+
+export default NavBar;
