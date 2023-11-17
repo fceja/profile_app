@@ -7,7 +7,7 @@ import MyMapComponent from "@components/googleMap/MyMapComponent";
 
 // return loading or failure div
 const render = (status: Status): React.ReactElement => {
-  if (status === Status.FAILURE) return <div>Errorv</div>;
+  if (status === Status.FAILURE) return <div>Error</div>;
   return <div>Loading...</div>;
 };
 
