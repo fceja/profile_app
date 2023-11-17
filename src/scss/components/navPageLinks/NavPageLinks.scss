@@ -1,13 +1,14 @@
 @import "../../Variables";
 
 // toggle visiblity of nav links
-@media (min-width: 0px) and (max-width: 551px) {
+// NOTE - changes here will require updates in HamburgerMenu.scss -> .hamburger-menu-container, .visible
+@media (min-width: 0px) and (max-width: 619px) {
   .nav-page-links-container {
     display: none;
   }
 }
 
-@media (min-width: 552px) {
+@media (min-width: 620px) {
   .nav-page-links-container {
     display: block;
     display: flex;

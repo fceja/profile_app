@@ -10,7 +10,7 @@ const images = GalleryImageData;
 
 const MyImageGallery: React.FC = () => {
   return (
-    <section className="app-react-image-gallery">
+    <section className="app-react-image-gallery mt-3 mb-3">
       <ImageGallery items={images} />
     </section>
   );

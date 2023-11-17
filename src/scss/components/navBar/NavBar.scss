@@ -4,11 +4,12 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
   height: 10vh;
-  position: sticky;
   top: 0;
   z-index: 1;
-  background-color: white;
+  position: relative;
 }
 
 .nav-logo-container {

@@ -31,26 +31,28 @@ $menu-bar-container-width: calc($menu-bar-container-height / 1.25);
 }
 
 /* hamburger menu visibility */
+// NOTE - changes here will require updates in NavPageLinks.scss -> .nav-page-links-container
+// NOTE - changes here will require updates in .hamburger-menu-container
 .hidden {
   display: none;
 }
 
-@media (min-width: 501px) {
+@media (min-width: 620px) {
   .visible {
     display: none;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 619px) {
   .visible {
     position: absolute;
-    top: 5em;
+    top: 6em;
     right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    min-width: 200px;
 
     a {
       margin-top: 15px;
@@ -89,7 +91,8 @@ $menu-bar-container-width: calc($menu-bar-container-height / 1.25);
 }
 
 // toggle visiblity of ham menu
-@media (min-width: 0px) and (max-width: 551px) {
+// NOTE - changes here will require updates in NavPageLinks.scss -> .nav-page-links-container
+@media (min-width: 0px) and (max-width: 619px) {
   .hamburger-menu-container {
     margin-right: 4%;
     display: flex;
@@ -98,7 +101,7 @@ $menu-bar-container-width: calc($menu-bar-container-height / 1.25);
     height: 100%;
   }
 }
-@media (min-width: 552px) {
+@media (min-width: 620px) {
   .hamburger-menu-container {
     display: none;
   }

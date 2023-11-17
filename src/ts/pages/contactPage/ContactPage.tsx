@@ -6,7 +6,7 @@ import ContactFormContainer from "@components/contactForm/ContactFormContainer";
 
 export default function ContactPage() {
   return (
-    <div className="contact-info-form-container pt-3">
+    <div className="contact-info-form-container mt-3 mb-3 ">
       <ContactInfo />
       <ContactFormContainer />
     </div>

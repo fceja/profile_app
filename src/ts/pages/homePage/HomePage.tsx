@@ -7,9 +7,9 @@ const mainImage = GalleryImageData[0];
 
 export default function HomePage() {
   return (
-    <div className="home-page-container m-4 mt-5 mb-5">
+    <div className="home-page-container mt-3 mb-3">
       <div className="message-container text-center">
-        <h1>This is title</h1>
+        <h1>Lorem Ipsum</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
