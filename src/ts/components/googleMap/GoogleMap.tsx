@@ -8,7 +8,11 @@ import MyMapComponent from "@components/googleMap/MyMapComponent";
 // return loading or failure div
 const render = (status: Status): React.ReactElement => {
   if (status === Status.FAILURE) return <div>Error</div>;
-  return <div>Loading...</div>;
+  return (
+    <div className="d-flex justify-content-center align-items-center">
+      Loading...
+    </div>
+  );
 };
 
 const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY ?? "";

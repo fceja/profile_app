@@ -27,6 +27,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.png$/,
+        exclude: path.resolve(__dirname, "src/assets/images"),
+      },
+      {
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
