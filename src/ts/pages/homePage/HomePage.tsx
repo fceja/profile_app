@@ -1,5 +1,3 @@
-import React from "react";
-
 import "@scss/pages/homePage/HomePage.scss";
 import { GalleryImageData } from "@data/GalleryData";
 

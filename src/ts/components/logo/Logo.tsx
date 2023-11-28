@@ -1,5 +1,3 @@
-import React from "react";
-
 import "@scss/components/logo/Logo.scss";
 import { LogoData } from "@data/LogoData";
 import SetScrollVar from "@utils/pageActions/SetScrollVar";

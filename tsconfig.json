@@ -3,7 +3,7 @@
     "baseUrl": "./",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "module": "CommonJS",
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -23,10 +23,10 @@
       "@scss/*": ["./src/scss/*"],
       "@utils/*": ["./src/ts/utils/*"]
     },
+    "rootDir": "./",
     "skipLibCheck": true,
-    "sourceMap": false,
     "strict": true,
     "strictNullChecks": true,
-    "target": "es2016"
+    "target": "ES6"
   }
 }

@@ -4,6 +4,5 @@
 /envs
 
 **/.DS_Store
-**/.env.**
 **/.env
 *.js.map

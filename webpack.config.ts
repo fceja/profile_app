@@ -4,7 +4,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "path";
 import TsconfigPathsPlugin from "tsconfig-paths-webpack-plugin";
 
-const projectRoot = ".";
+const projectRoot = "./";
 
 module.exports = {
   mode: "development",
@@ -26,10 +26,6 @@ module.exports = {
   // files to process
   module: {
     rules: [
-      {
-        test: /\.png$/,
-        exclude: path.resolve(__dirname, "src/assets/images"),
-      },
       {
         test: /\.tsx?$/,
         use: "ts-loader",
@@ -57,7 +53,7 @@ module.exports = {
   plugins: [
     // set env vars
     new Dotenv({
-      path: "./.env",
+      path: ".env",
     }),
 
     // set html index

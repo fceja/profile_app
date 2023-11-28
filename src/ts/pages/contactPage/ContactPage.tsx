@@ -1,5 +1,3 @@
-import React from "react";
-
 import "@scss/pages/contactPage/ContactPage.scss";
 import ContactInfo from "@components/contactInfo/ContactInfo";
 import ContactFormContainer from "@components/contactForm/ContactFormContainer";

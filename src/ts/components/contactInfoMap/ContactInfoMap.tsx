@@ -1,5 +1,3 @@
-import React from "react";
-
 import "@scss/components/contactInfoMap/ContactInfoMap.scss";
 import GoogleMap from "@components/googleMap/GoogleMap";
 

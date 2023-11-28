@@ -1,5 +1,3 @@
-import React from "react";
-
 import "@scss/components/navBar/NavBar.scss";
 import HamburgerMenu from "@components/hambugerMenu/HamburgerMenu";
 import { LogoData } from "@data/LogoData";

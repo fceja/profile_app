@@ -1,5 +1,3 @@
-import React from "react";
-
 import "@scss/components/telNumber/TelNumber.scss";
 
 const handleClick = () => {
