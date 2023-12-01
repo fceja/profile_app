@@ -52,6 +52,14 @@ Emailer API project -> [GitHub-Emailer-Api](https://github.com/fceja/emailer_api
       height="40"
     />
   </a>
+  <a href="https://developers.google.com/maps" target="_blank" rel="noreferrer"">
+    <img
+      src="https://developers.google.com/static/maps/images/maps-icon.svg"
+      alt="googlemaps"
+      width="40"
+      height="40"
+    />
+  </a>
   <a href="https://sass-lang.com" target="_blank" rel="noreferrer">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
