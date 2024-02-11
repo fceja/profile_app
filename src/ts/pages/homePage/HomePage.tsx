@@ -1,6 +1,7 @@
 import "@scss/pages/homePage/HomePage.scss";
 import { GalleryImageData } from "@data/GalleryData";
 
+
 const mainImage = GalleryImageData[0];
 
 export default function HomePage() {
