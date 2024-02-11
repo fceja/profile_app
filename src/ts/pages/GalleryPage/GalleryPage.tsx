@@ -13,11 +13,7 @@ const images = GalleryImageData;
 
 const MyImageGallery: React.FC = () => {
   return (
-    <Suspense
-      fallback={
-        <Loading />
-      }
-    >
+    <Suspense fallback={<Loading />}>
       <section className="app-react-image-gallery mt-3 mb-3">
         <ImageGallery items={images} />
       </section>

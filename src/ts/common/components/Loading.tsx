@@ -1,3 +1,5 @@
+import "@scss/components/common/Loading.scss";
+
 const Loading = () => {
     return (
         <div className="loading-fallback">

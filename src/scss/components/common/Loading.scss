@@ -1,0 +1,9 @@
+@import "../../Variables";
+
+.loading-fallback {
+  color: $default-light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

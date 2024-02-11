@@ -1,5 +1,9 @@
+import { lazy, Suspense } from "react";
+
 import "@scss/components/contactInfoMap/ContactInfoMap.scss";
-import GoogleMap from "@components/googleMap/GoogleMap";
+import Loading from "@common/components/Loading"
+
+const GoogleMap = lazy(() => import("@components/googleMap/GoogleMap"))
 
 const ContactInfoMap = () => {
   return (
@@ -25,7 +29,9 @@ const ContactInfoMap = () => {
         </svg>
       </div>
       <span>Serving California</span>
-      <GoogleMap />
+      < Suspense fallback={<Loading />}>
+        <GoogleMap />
+      </Suspense>
     </section>
   );
 };
