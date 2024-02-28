@@ -1,14 +1,12 @@
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 
 import "@scss/pages/galleryPage/GalleryPage.scss";
 import { GalleryImageData } from "@data/GalleryData";
-import Loading from "@common/components/Loading"
+import Loading from "@common/components/Loading";
 
-// TODO - can this be lazily loaded? initially threw error.
-import ImageGallery from "react-image-gallery";
+const ImageGallery = lazy(() => import("react-image-gallery"));
 
-// TODO - will need to prepare proper aspect ratio for images, so that the
-// size appears identical in the slider
+// TODO - for consistency, prepare images with identical aspect ratio
 
 const MyImageGallery: React.FC = () => {
   return (
