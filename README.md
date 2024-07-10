@@ -9,8 +9,7 @@ Emailer API project -> [GitHub-Emailer-Api](https://github.com/fceja/emailer_api
 
 # Installation
 ![](https://img.shields.io/badge/Unix-informational?style=flat&logo=unix&logoColor=white&color=eaeaea)
-![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=eaeaea)
-![](https://shields.io/badge/OS-MacOS-informational?style=flat&logo=Apple&logoColor=white&color=eaeaea)
+
 1. Clone repo
 2. Install Node
    - ```https://nodejs.org/en/download```
